@@ -85,6 +85,5 @@
 
 .judul {
   color: white;
-  position: absolute;
-  top: 50px;
+  margin: -25px;
 }
