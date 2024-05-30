@@ -7,252 +7,50 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman 1</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-            font-family: 'poppins', sans-serif;
-        }
-
-        .halaman {
-            background-color: white;
-            color: black;
-            padding: 10px;
-            position: fixed;
-            top: 16px;
-            left: 16px;
-            border: solid;
-            border-color: green;
-            border-radius: 10px;
-        }
-
-        .halaman span,
-        a:link,
-        a:visited {
-            padding: 5px;
-            display: block;
-            color: black;
-            text-decoration: none;
-        }
-
-        .halaman a:hover {
-            background-color: grey;
-            transition: background-color 0.3s;
-        }
-
-        .judul {
-            padding-top: 100px;
-            padding-bottom: 100px;
-            color: white;
-            text-align: center;
-            background-image: url(images/background.jpg);
-            background-size: cover;
-            background-position: center;
-        }
-
-        .rangkuman h1 {
-            text-align: center;
-            margin: 20px;
-        }
-
-        .rangkuman p {
-            text-align: justify;
-        }
-
-        .rangkuman {
-            color: black;
-            background-color: white;
-            margin: auto;
-            width: 60%;
-            border: outset;
-            padding: 0px 15px 15px 15px;
-            border-radius: 20px;
-        }
-
-        .dropdown {
-            display: none;
-        }
-
-        #gambar {
-            width: 50%;
-        }
-
-        #tiktok{
-            width: 150px;
-        }
-
-
-        .homepage {
-            background-color: rgb(201, 255, 201);
-            text-align: center;
-        }
-
-        nav {
-            display: none;
-        }
-
-        nav input[type='checkbox'],
-        nav label {
-            display: none;
-
-        }
-
-        .active {
-            background-color: grey;
-            cursor: unset;
-        }
-
-        @media (max-width:412px) {
-
-            /* Dropdown Button */
-            /* .dropbtn {
-                width: inherit;
-                background-color: #04AA6D;
-                color: white;
-                padding: 16px;
-                font-size: 16px;
-                border: none;
-            } */
-
-            /* The container <div> - needed to position the dropdown content */
-            /* .dropdown {
-                width: 100%;
-                position: relative;
-                display: inline-block;
-            } */
-
-            /* Dropdown Content (Hidden by Default) */
-            /* .dropdown-content {
-                width: inherit;
-                display: none;
-                position: absolute;
-                background-color: #f1f1f1;
-                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-                z-index: 1;
-            } */
-
-            /* Links inside the dropdown */
-            /* .dropdown-content a {
-                text-align: center;
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-            } */
-
-            /* Change color of dropdown links on hover */
-            /* .dropdown-content a:hover {
-                background-color: #ddd;
-            } */
-
-            /* Show the dropdown menu on hover */
-            /* .dropdown:hover .dropdown-content {
-                display: block;
-            } */
-
-            /* Change the background color of the dropdown button when the dropdown content is shown */
-            /* .dropdown:hover .dropbtn {
-                background-color: #3e8e41;
-            } */
-
-            .rangkuman {
-                width: 100%;
-            }
-
-            .isi-rangkuman h1 {
-                font-size: 24px;
-            }
-
-            .halaman {
-                display: none;
-                font-weight: bold;
-            }
-
-            nav {
-                display: block;
-                flex-direction: row;
-                flex-wrap: wrap;
-                margin-left: 0;
-                margin-right: 0;
-            }
-
-            /* Because we are in mobile mode, we want to display it as a
-       vertical list */
-            nav ul {
-                display: block;
-            }
-
-            /* We have two lists: the first one are the always visibile items
-       in the menu bar. The second one is the one that will be hidden */
-            nav ul:last-child {
-                width: 100%;
-                flex-basis: 100%;
-            }
-
-            nav ul li {
-                margin-bottom: 0;
-                width: 100%;
-                text-align: center;
-                padding: 0.5em;
-            }
-
-            input[type='checkbox']:not(:checked)+ul {
-                display: none;
-            }
-
-            nav label {
-                background-color: green;
-                text-align: center;
-                display: block;
-                padding: 0.5em;
-                line-height: 1.6em;
-                align-self: center;
-            }
-
-        }
-    </style>
+    <title>Halaman 2</title>
+    <link rel="stylesheet" href="pertemuanstyle.css">
 </head>
 
 <body>
+
+    <!-- NAVBAR MULAI DARI SINI -->
+
     <nav>
-        <!-- Always visible items in the nav bar -->
-        <!-- <ul>
-            <li>
-                <a href="Homepage">Homepage</a>
-            </li>
-        </ul> -->
         <label for='menu' tabindex="0">
             Halaman
         </label>
         <input id='menu' type='checkbox' />
-        <!-- The collapsable menu -->
-       <ul>
-            <li><a href='https://zahraramadhani.github.io/rangkuman'>Homepage</a></li>
-            <li><a href='pertemuan1.html'>Pertemuan 1</a></li>
+        <ul>
+            <li><a href='./'>Homepage</a></li>
+            <li><a href='./pertemuan1'>Pertemuan 1</a></li>
             <li><a href='#' class="active">Pertemuan 2</a></li>
-            <li><a href='pertemuan3.html'>Pertemuan 3</a></li>
-            <li><a href='pertemuan4.html'>Pertemuan 4</a></li>
-            <li><a href='pertemuan5.html'>Pertemuan 5</a></li>
-            <li><a href='pertemuan6.html'>Pertemuan 6</a></li>
-            <li><a href='pertemuan7.html'>Pertemuan 7</a></li>
-            <li><a href='pertemuan8.html'>Pertemuan 8</a></li>
-            <li><a href='pertemuan9.html'>Pertemuan 9</a></li>
-            <li><a href='pertemuan10.html'>Pertemuan 10</a></li>
-            <li><a href='pertemuan11.html'>Pertemuan 11</a></li>
-            <li><a href='pertemuan12.html'>Pertemuan 12</a></li>
-            <li><a href='pertemuan13.html'>Pertemuan 13</a></li>
-            <li><a href='pertemuan14.html'>Pertemuan 14</a></li>
+            <li><a href='./pertemuan3'>Pertemuan 3</a></li>
+            <li><a href='./pertemuan4'>Pertemuan 4</a></li>
+            <li><a href='./pertemuan5'>Pertemuan 5</a></li>
+            <li><a href='./pertemuan6'>Pertemuan 6</a></li>
+            <li><a href='./pertemuan7'>Pertemuan 7</a></li>
+            <li><a href='./pertemuan8'>Pertemuan 8</a></li>
+            <li><a href='./pertemuan9'>Pertemuan 9</a></li>
+            <li><a href='./pertemuan10'>Pertemuan 10</a></li>
+            <li><a href='./pertemuan11'>Pertemuan 11</a></li>
+            <li><a href='./pertemuan12'>Pertemuan 12</a></li>
+            <li><a href='./pertemuan13'>Pertemuan 13</a></li>
+            <li><a href='./pertemuan14'>Pertemuan 14</a></li>
         </ul>
     </nav>
+
+    <!-- AKHIR DARI NAVBAR DISINI -->
+
+
+    <!-- INI SIDEBAR -->
+
     <div class="halaman">
-        <a href="https://zahraramadhani.github.io/rangkuman">
+        <a href="./">
             <div class="homepage">
                 Homepage
             </div>
         </a>
-        <a href="pertemuan1.html">
+        <a href="./pertemuan1">
             <span>
                 Pertemuan 1
             </span>
@@ -262,169 +60,236 @@
                 Pertemuan 2
             </span>
         </a>
-        <a href="pertemuan3.html">
+        <a href="./pertemuan3">
             <span>
                 Pertemuan 3
             </span>
         </a>
-        <a href="pertemuan4.html">
+        <a href="./pertemuan4">
             <span>
                 Pertemuan 4
             </span>
         </a>
-        <a href="pertemuan5.html">
+        <a href="./pertemuan5">
             <span>
                 Pertemuan 5
             </span>
         </a>
-        <a href="pertemuan6.html">
+        <a href="./pertemuan6">
             <span>
                 Pertemuan 6
             </span>
         </a>
-        <a href="pertemuan7.html">
+        <a href="./pertemuan7">
             <span>
                 Pertemuan 7
             </span>
         </a>
-        <a href="pertemuan8.html">
+        <a href="./pertemuan8">
             <span>
                 Pertemuan 8
             </span>
         </a>
-        <a href="pertemuan9.html">
+        <a href="./pertemuan9">
             <span>
                 Pertemuan 9
             </span>
         </a>
-        <a href="pertemuan10.html">
+        <a href="./pertemuan10">
             <span>
                 Pertemuan 10
             </span>
         </a>
-        <a href="pertemuan11.html">
+        <a href="./pertemuan11">
             <span>
                 Pertemuan 11
             </span>
         </a>
-        <a href="pertemuan12.html">
+        <a href="./pertemuan12">
             <span>
                 Pertemuan 12
             </span>
         </a>
-        <a href="pertemuan13.html">
+        <a href="./pertemuan13">
             <span>
                 Pertemuan 13
             </span>
         </a>
-        <a href="pertemuan14.html">
+        <a href="./pertemuan14">
             <span>
                 Pertemuan 14
             </span>
         </a>
     </div>
-    <div class="judul">
-        <h1>Pertemuan 2</h1>
 
+    <!-- AKHIR DARI SIDEBAR -->
+
+
+    <div class="isi">
+        <h1 id="pertemuan">Pertemuan 2</h1>
         <div class="rangkuman">
-            <div class="judul-rangkuman">
-                <div class="isi-rangkuman">
-                    <h1>
-                        Dampak Komputer & Teknologi Pada Lingkungan Masyarakat Sekitar
-                    </h1>
-                    <img src="images/komputerdanmasyarakat.jpg" alt="" id="gambar">
+            <div class="isi-rangkuman">
+                <h1>
+                    SEJARAH, PERKEMBANGAN DAN KRITIK TENTANG TEKNOLOGI MAJU
+                </h1>
+
+                <h3>
+                    A. Sejarah Awal Komputer
+                </h3>
+                <p id="paragraf">
+                    Manusia paling awal mengenali fenomena kuantitas dan menggunakan jari mereka untuk menghitung dan
+                    bertindak atas benda-benda material di dunia mereka.
+                    Metode sederhana seperti ini akhirnya memberi jalan pada pembuatan perangkat proxy seperti sempoa,
+                    yang memungkinkan tindakan pada jumlah item yang lebih tinggi, dan tablet lilin, dimana simbol yang
+                    ditekan memungkinkan penyimpanan informasi. Seiring waktu, perangkat baru ini meningkatkan kemampuan
+                    untuk menyimpan dan menemukan apa yang sekarang disebut data, untuk berkomunikasi jarak jauh, dan
+                    untuk membuat produk informasi yang dikumpulkan dari miliaran elemen yang tak terhitung jumlahnya,
+                    semua diubah menjadi format digital yang seragam, contoh alat hitung.
+                </p>
+
+                <ol id="list" type="a">
+                    <li>
+                        Sempoa
+                    </li>
                     <p>
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut obcaecati veniam libero tempora
-                        vitae ratione quam dolorem ad laborum blanditiis earum rerum nemo dolor sequi architecto,
-                        numquam nihil quas suscipit omnis. Hic est non dolor. Similique mollitia dicta doloribus amet
-                        sit sapiente modi voluptate alias explicabo accusantium? Esse molestias repudiandae animi
-                        dignissimos mollitia cum minima consequatur? Suscipit repellat cum delectus in nobis natus
-                        accusantium libero reiciendis voluptate nam. Cupiditate quia facere libero error deleniti in
-                        excepturi architecto nulla minus veniam. Velit numquam repellendus earum reprehenderit atque
-                        fuga eum enim perferendis dicta. Ratione facere, aperiam illum dolore eligendi ipsa aliquid
-                        natus aut ea? Illum repellendus non animi pariatur nisi doloribus perferendis at? Ex incidunt
-                        iste repellendus tempora, cupiditate ad velit saepe placeat dolore iure consequatur magnam
-                        aliquam voluptas soluta debitis minus. Doloribus hic voluptate sint adipisci, error neque iste
-                        iusto at mollitia rerum, eaque recusandae aliquid atque, nulla molestiae saepe dolorem alias
-                        quaerat consectetur ipsam. Voluptatem incidunt sit, fugit minima labore dolores distinctio ipsam
-                        ratione provident culpa molestiae blanditiis, eum dolorem tenetur, pariatur dolor asperiores
-                        quas illum debitis. Commodi, error? Fugit, quidem cupiditate! Iste sint perspiciatis ipsum vel
-                        deserunt in voluptatibus at? Quibusdam impedit architecto tempora nobis. Laborum neque tenetur
-                        eum provident modi debitis totam veniam sit iste eaque earum necessitatibus eos magnam
-                        voluptatibus commodi similique quas facere aliquam reiciendis, dolorum pariatur dignissimos,
-                        dolore vero! Quidem fugiat dolor architecto delectus optio. Optio enim dolore laudantium
-                        necessitatibus ad vero quasi facilis odit doloribus, commodi inventore dicta tenetur dolor magni
-                        quisquam. Dolorem magnam rem perferendis illo neque unde vel quasi minus mollitia sapiente a
-                        tempora ullam molestiae, velit iste veniam ducimus ex in repudiandae eligendi ipsam nemo
-                        officia! Doloremque, rem quaerat qui iusto perspiciatis laborum et illum tempore quis nemo
-                        necessitatibus provident accusantium est dolorum amet suscipit ut voluptas eos omnis minus nulla
-                        architecto voluptates quia voluptate. Itaque voluptas cupiditate iste, ab perferendis repellat
-                        recusandae at praesentium earum obcaecati vel illo temporibus architecto neque quis laboriosam
-                        quidem libero sit pariatur, possimus officiis voluptatibus cumque odio. Temporibus similique
-                        veniam quas distinctio corrupti obcaecati rem quod? Nisi facere hic beatae odit voluptate. Hic,
-                        iste facilis! Vero commodi dignissimos sapiente eligendi neque reiciendis quas, incidunt magnam
-                        odit dolor voluptatum quo beatae cupiditate quidem eius architecto quaerat vitae ab cum, libero
-                        fugiat. Autem sapiente praesentium natus harum voluptate aliquid labore quos placeat reiciendis
-                        dolorem blanditiis, aperiam, sint, voluptatibus soluta! Amet voluptas aliquam maxime
-                        reprehenderit animi neque sapiente! Unde animi dolore iure nostrum nemo, minima at veniam
-                        facilis doloremque consectetur quasi enim tempore similique sit natus aperiam. Aliquid quas
-                        laudantium voluptate, vel explicabo odit. At dolorem nobis mollitia expedita, a repellat
-                        nesciunt doloribus deserunt pariatur eius sed amet asperiores dolores ipsam vel. Quam voluptates
-                        eum iste voluptas vero dicta maxime tenetur dolorum excepturi mollitia, quo aperiam quis facere
-                        quae expedita minima iure tempora architecto consectetur laudantium reprehenderit vitae. Atque
-                        accusamus autem aspernatur nesciunt facere facilis exercitationem ullam eligendi sequi ipsum.
-                        Modi quo, pariatur fugiat voluptate iste obcaecati dolorem dicta hic. Aliquid expedita nisi
-                        numquam tenetur aut laborum minima accusantium, eum vel et quam ea, mollitia, excepturi
-                        cupiditate? Nihil fugit, nesciunt maiores consequatur aperiam aut autem sint molestias minima
-                        delectus rem hic neque dolorum ea placeat similique excepturi distinctio consectetur laudantium
-                        mollitia eaque accusantium id recusandae. Quasi dolorum blanditiis eos temporibus debitis magni
-                        inventore, explicabo sint omnis labore amet numquam incidunt. Assumenda ipsa enim, amet iure ex
-                        doloribus inventore sit asperiores perspiciatis, qui, repellendus necessitatibus! Suscipit quae
-                        fuga quasi, temporibus cumque laborum illo iusto sunt beatae commodi veniam voluptatum eveniet
-                        quis repellendus! Minima quis mollitia perspiciatis voluptatibus consequuntur, doloremque
-                        delectus officia sit vero incidunt sint quibusdam cupiditate dolores, modi id similique
-                        repellendus eligendi porro voluptates quas at quod culpa? Explicabo, incidunt facilis architecto
-                        doloremque maxime, placeat itaque repellendus temporibus earum, nobis iure unde labore saepe hic
-                        fugit molestiae reprehenderit libero dolor quasi qui ad eius recusandae quo distinctio. Optio
-                        deleniti fugiat earum minus porro quia, veritatis dolorum quam delectus, beatae a inventore
-                        blanditiis aut doloremque laudantium vel eveniet quibusdam. Sequi impedit ipsa quas voluptatem
-                        cupiditate quod, odio quis eveniet eum consectetur aliquid minima optio nobis cum vero qui
-                        numquam deleniti iusto! Quibusdam harum in dignissimos eum officia dolorem, nostrum voluptatum
-                        quod ex molestias blanditiis. Neque vitae quia id rem perferendis. Doloribus assumenda dolores
-                        laborum repellendus illum ipsa labore! Dicta nisi vel odit nemo. Quasi facilis, eos id
-                        perferendis assumenda excepturi pariatur nulla eius vitae consectetur laborum repudiandae unde
-                        nesciunt quia voluptas incidunt, quisquam dolor voluptates? Commodi, expedita inventore. Non qui
-                        quaerat excepturi recusandae ratione facere natus officia veniam, molestiae quas tenetur minima
-                        iusto reprehenderit? Sint reprehenderit doloribus, placeat, aspernatur voluptatum natus eveniet
-                        ullam tempore optio eaque quas cumque ad. Impedit tenetur quos aut nam laboriosam. Vero at
-                        delectus nostrum reiciendis? Porro adipisci maiores ut. Fugit velit temporibus facere illum
-                        repellendus deserunt porro earum minus maxime, maiores, sed incidunt. Quae, quia corrupti
-                        mollitia et modi necessitatibus eveniet quibusdam vel debitis minima eos doloremque, ea,
-                        architecto quasi itaque veritatis. Incidunt consequatur at quibusdam in facere! Delectus minus,
-                        deserunt impedit laborum officiis, tempore suscipit esse quidem quis quia est quaerat ipsa,
-                        repudiandae repellendus. Recusandae, suscipit beatae quis ipsam iusto doloremque, quod, fugiat
-                        accusamus odio totam illum necessitatibus quae ad fugit quisquam harum modi quidem consequuntur
-                        placeat deserunt rem impedit nisi soluta laborum. Beatae animi, consequatur facere adipisci nemo
-                        reiciendis fugit quos praesentium nisi sit, quod, commodi perferendis quisquam cupiditate ipsa
-                        architecto ad deserunt temporibus accusantium non exercitationem blanditiis alias officia quis.
-                        Aut fuga dolore, ab expedita perferendis dignissimos quidem, omnis ipsa earum, cum accusantium
-                        molestiae laborum itaque deleniti tempore porro eveniet temporibus unde culpa? Dolorem excepturi
-                        magnam quibusdam cumque nihil a eligendi minus tempore modi, architecto adipisci, totam mollitia
-                        animi atque illum doloribus consequuntur alias necessitatibus neque ex molestiae, placeat
-                        praesentium deserunt. Doloremque laudantium, aliquid sapiente aspernatur illo error magnam
-                        ducimus deleniti accusamus delectus architecto reiciendis, accusantium dolore eos eius aut
-                        impedit, necessitatibus eligendi. Earum, nostrum. Velit magnam officiis consequatur veniam, quis
-                        quaerat voluptatum distinctio saepe sint quas doloribus ipsa sapiente tempora. Eaque dolore
-                        autem aliquam corporis quasi ipsam, quaerat sed?
-
+                        Kata abacus sendiri berasal dari bahasa Yunani ἄβαξ (abax) untuk "lempengan atau papan gambar”.
+                        Sempoa yang lebih dikenal sebagai alat bantu dalam perhitungan. Awal mula sebuah komputer
+                        terlahir dari benda sederhana ini, yaitu sempoa atau juga disebut abaskus. Jadi sempoa merupakan
+                        cikal bakal komputer.
                     </p>
-                
-                </div>
+                    <img src="images/pertemuan1.1.png" alt="" id="gambar">
+                    <li>
+                        Kalkulator Roda Numerik 1
+                    </li>
+                    <p>
+                        Abacus mulai menghilang dan jarang digunakan lagi sejak kemunculan alat tulis seperti kertas dan pensil. Penemuan mesin komputer lainnya muncul pada sekitar 12 abad kemudian. Kalkulator roda numerik yang dinamakan pascaline (numerical wheel calculator) ditemukan oleh seorang anak muda yang berumur 18 tahun yaitu Blaise Pascal (1623-1662), berkisar pada tahun 1642.
+                    </p>
+                    <img src="images/pertemuan1.2.jpg" alt="" id="gambar">
+                    <li>
+                        Kalkulator Roda Numerik 2
+                    </li>
+                    <p>
+                        Seorang matematikawan serta filsuf dari Jerman yaitu Gottfred Wilhem von Leibniz (1646-1716) memperbaharui pascaline dengan penemuannya sekitar pada tahun 1694. Leibniz membuat mesin yang bisa digunakan untuk mengalikan. Kemudian, tahun 1820 Charles Xavier Thomas de Colmar membuat kalkulator mekanik fungsi aritmatik dasar yang memiliki empat fungsi yaitu perkalian, pembagiam, penjumlahan, pengurangan. Dimana saat itu digunakan dalam perang dunia ke-1 karena dapat membantu dalam melakukan kalkulasi.
+                    </p>
+                    <img src="images/pertemuan1.3.jpg" alt="" id="gambar">
+                </ol>
+
+                <h3>
+                    B. Sejarah Perkembangan Komputer
+                </h3>
+                <ol id="list" type="1">
+                    <li>
+                        Blaise Pascal
+                    </li>
+                    <p id="paragraf">
+                        Perkembangan komputer sejak masa Blaise Pascal (1623-1662) dimana Pascal mengembangkan kinerja komputer dari pendahulunya, dengan penemuannya yang membawa 8 jumlah bilangan. Pada tahun 1649 ia di berikan penghargaan Royal Privilege dimana ini adalah hak yang dipergunakan untuk memproduksi dan memperjualkan mesin ciptaannya (kalkulator komputer).
+                    </p>
+                    <p id="paragraf">
+                        Pada tahun 1652 barulah Pascal memulai produksi alat ciptaannya sebanyak 50 prototipe dimana ia dapat menjual sampai 36 mesin. Bisnis penjualan tersebut tidak semudah yang dipikirkan mengingat pascaline cendrung rumit dalam pengoperasiannya. Pascalinepun hanya dapat menambah dan membagi yang membuat para konsumen tidak menyukainya. 
+                    </p>
+                    <p id="paragraf">
+                        Gottfried W.Leibniz menemukan kalkulator yang dapat bersaing dengan Pascaline. Pada tahun 1652 penemuan tersebut berhenti diproduksi. Leibniz menemukan kalkulator yang dapat bersaing dengan Pascaline. Selama kurang lebih 40 tahun Leibniz memperbaharui design kalkulator Pascaline serta memproduksinya. Mesin hasil penyempurnaan oleh Leibniz dapat dipergunakan dengan mudah dan bebas diperjual belikan.
+                    </p>
+                    <li>
+                        Charles Babbage
+                    </li>
+                    <p id="paragraf">
+                        Seorang Profesor Matematika asal Inggris yaitu Charles Babbage atau lebih dikenal sebagai Bapak komputer adalah gelar dari Charles Babbage. Sebuah komputer yang dapat diprogram merupakan gagasan dari Charles Babbage yang menjadikannya sebagai salah satu tokoh penting dalam dunia komputer. 
+                    </p>
+                    <p id="paragraf">
+                        Charles Babbage menemukan mesin baru sebagai bukti dari gagasannya tersebut. Meskipun pada akhirnya mesin tersebut tidak diselesaikan Charles Babbage dan kini dimuseumkan di Inggris. Pada tahun 1822 Charles Babbage mencoba menggunakan mesin untuk menghitung tabel matematika. Itulah alasan sejarahwan memulai dengan Mesin Analitik yang coba dibangun Charles Babbage pada abad kesembilan belas. 
+                    </p>
+                    <li>
+                        Gottfred Wilhem von Leibniz
+                    </li>
+                    <p>
+                        Komputer mengalami perkembangan yang pesat pada 1820, yaitu dimana kalkulator mekanik sudah bisa melakukan 4 operasi dasar aritmatika.
+                    </p>
+                    <li>
+                        Herman Hollerith
+                    </li>
+                    <p>
+                        Pada tanggal 29 Februari 1860, Herman Hollerith lahir dan berperan dalam sejarah komputer hingga dia meninggal dunia pada 17 November 1929. Mesin tabulator yang dibuat olehnya menggunakan punched card. Pada prosesnya, dikatakan memiliki kinerja yang sangat cepat dan dapat memproses berjuta-juta data statistik. Data yang didapati oleh Hollerith dapat diletakkan (lubang) ke-sebuah kartu (punched card) yang memiliki lokasi yang sesuai atau lokasi dengan kondisi tertentu. Ide inilah yang menjadi dasar terbuatnya komputer era modern karena kartu ini bisa diurutkan maupun dijumlahkan menggunakan mesin.
+                    </p>
+                    <li>
+                        Howard H. Aiken
+                    </li>
+                    <p>
+                        Howard berhasil mengembangkan komputer elektronik menggunakan sinyal elektromagnetik. Perkembangan komputer selanjutnya menyusul: Electronic Numerical Integrator and Computer (ENIAC). John W John Presper Eckert (1919-1995) adalah ahli kedua yang berhasil mengembangkan ENIAC.
+                    </p>
+                    <li>
+                        John William Mauchly
+                    </li>
+                    <p>
+                        Komputer terus dikembangkan oleh para ahli. Pada tahun 1940-an, John menemukan mesin yang disebut EDVAC (Electronic Discrete Variable Automatic Computer) yang dapat menyimpan data dan program  dalam memori. Inilah awal mula perkembangan CPU yang konon muncul sekitar masa ini.
+                    </p>
+                </ol>
+
+                <h3>
+                    C. Kritik Terhadap Perkembangan Teknologi Maju
+                </h3>
+                <p id="paragraf">
+                    Teknologi adalah bagian dari kehidupan kita saat ini. Banyak orang yang mengira bahwa komputer hanyalah sebuah alat elektronik biasa, namun seiring berjalannya waktu telah terintegrasi dengan teknologi-teknologi terkait dan mempunyai arti yang sangat luas tergantung dari kebutuhan manusia itu sendiri. Saat ini terdapat berbagai pendapat yang diperdebatkan mengenai dampak positif dan negatif dari perkembangan komputer dan teknologi. Dimana masyarakat tidak bisa menolak kenyataan bahwa teknologi pasti akan membawa dampak negatif dan kesengsaraan bagi penduduk yang ada. Tentu saja, dengan berkembangnya teknologi setiap hari dan semakin memudahkan aktivitas manusia, ketika segala sesuatunya menjadi lebih mudah berkat komputer, niscaya Anda akan merasa asing bahkan kesepian. Dampak teknologi antara lain hilangnya rasa memiliki antar manusia dalam kehidupan nyata. Jika tidak digunakan dengan bijak, banyak dampak negatif yang dapat mempengaruhi fungsi  penggunaan ponsel cerdas yang sebenarnya. Berikut beberapa pendapat para ahli :
+                </p>
+
+                <ol id="list" type="1">
+                    <li>
+                        James D. Finn
+                    </li>
+                    <p>
+                        Pada tahun 1960, beliau menyatakan bahwa teknologi bukan sekedar  mesin, melainkan suatu sistem, kendali, proses, dan mekanisme yang dapat memantau perkembangan dari waktu ke waktu. Hal ini menjadikan James  sebagai bapak teknologi dalam pendidikan.
+                    </p>
+                    <li>
+                        Seattler
+                    </li>
+                    <p>
+                        Saettler mengatakan bahwa bangsa Yunani kuno mengakui teknologi sebagai pengetahuan yang dapat melakukan kegiatan khusus.
+                    </p>
+                    <li>
+                        Lewis Mumford
+                    </li>
+                    <p id="paragraf">
+                        Teknologi dapat mengacu pada artefak material, dari perkakas batu prasejarah hingga pembangkit listrik tenaga nuklir. Teknologi didefinisikan sebagai seperangkat praktik yang digunakan manusia untuk mengubah dunia material, praktik yang terlibat dalam penciptaan dan penggunaan materi.
+                    </p>
+                    <p id="paragraf">
+                        Inisiatif manusia akan hilang dengan sendirinya dari kehidupan masyarakat. Dengan adanya teknologi sekarang kita tidak perlu menunggu berhari-hari untuk mendapatkan surat, kita dapat menggunakan aplikasi seperti e-mail ataupun melalui jejaring sosial, kita sudah dapat berkomunikasi dengan mudah dan sangat cepat.
+                    </p>
+                </ol>
+
+                <p>
+                    Ciri-ciri masyarakat modern yang dikemukakan oleh Talcott Parson, sebagai berikut: 
+                </p>
+
+                <ol id="list" type="1">
+                    <li>
+                        Prestasi, adalah masyarakatnya suka mengejar prestasi. 
+                    </li>
+                    <li>
+                        Pengembangan diri, adalah lebih mengutamakan kepentingan diri sendiri. 
+                    </li>
+                    <li>
+                        Netralitas efektif, adalah bersikap biasa saja (netral) tidak membanding bandingan satu dengan yang lainnya, bahkan dapat menuju sikap tidak memperhatikan orang lain atau lingkungan. 
+                    </li>
+                    <li>
+                        Universalisme, kondisi dimana kita menerima segala sesuatu dengan obyektif. 
+                    </li>
+                    <li>
+                        Spesifitas, kondisi dimana kita berterus terang dalam menerangkan segala sesuatu.
+                    </li>
+                </ol>
+
             </div>
         </div>
     </div>
+    </div>
 
+    <a href="#halaman" id="myBtn" title="Go to top">
+        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+        </svg>
+
+    </a>
 
 
 
