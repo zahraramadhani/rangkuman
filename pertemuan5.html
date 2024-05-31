@@ -7,267 +7,65 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman 1</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-            font-family: 'poppins', sans-serif;
-        }
-
-        .halaman {
-            background-color: white;
-            color: black;
-            padding: 10px;
-            position: fixed;
-            top: 16px;
-            left: 16px;
-            border: solid;
-            border-color: green;
-            border-radius: 10px;
-        }
-
-        .halaman span,
-        a:link,
-        a:visited {
-            padding: 5px;
-            display: block;
-            color: black;
-            text-decoration: none;
-        }
-
-        .halaman a:hover {
-            background-color: grey;
-            transition: background-color 0.3s;
-        }
-
-        .judul {
-            padding-top: 100px;
-            padding-bottom: 100px;
-            color: white;
-            text-align: center;
-            background-image: url(images/background.jpg);
-            background-size: cover;
-            background-position: center;
-        }
-
-        .rangkuman h1 {
-            text-align: center;
-            margin: 20px;
-        }
-
-        .rangkuman p {
-            text-align: justify;
-        }
-
-        .rangkuman {
-            color: black;
-            background-color: white;
-            margin: auto;
-            width: 60%;
-            border: outset;
-            padding: 0px 15px 15px 15px;
-            border-radius: 20px;
-        }
-
-        .dropdown {
-            display: none;
-        }
-
-        #gambar {
-            width: 50%;
-        }
-
-        #tiktok{
-            width: 150px;
-        }
-
-
-        .homepage {
-            background-color: rgb(201, 255, 201);
-            text-align: center;
-        }
-
-        nav {
-            display: none;
-        }
-
-        nav input[type='checkbox'],
-        nav label {
-            display: none;
-
-        }
-
-        .active {
-            background-color: grey;
-            cursor: unset;
-        }
-
-        @media (max-width:412px) {
-
-            /* Dropdown Button */
-            /* .dropbtn {
-                width: inherit;
-                background-color: #04AA6D;
-                color: white;
-                padding: 16px;
-                font-size: 16px;
-                border: none;
-            } */
-
-            /* The container <div> - needed to position the dropdown content */
-            /* .dropdown {
-                width: 100%;
-                position: relative;
-                display: inline-block;
-            } */
-
-            /* Dropdown Content (Hidden by Default) */
-            /* .dropdown-content {
-                width: inherit;
-                display: none;
-                position: absolute;
-                background-color: #f1f1f1;
-                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-                z-index: 1;
-            } */
-
-            /* Links inside the dropdown */
-            /* .dropdown-content a {
-                text-align: center;
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-            } */
-
-            /* Change color of dropdown links on hover */
-            /* .dropdown-content a:hover {
-                background-color: #ddd;
-            } */
-
-            /* Show the dropdown menu on hover */
-            /* .dropdown:hover .dropdown-content {
-                display: block;
-            } */
-
-            /* Change the background color of the dropdown button when the dropdown content is shown */
-            /* .dropdown:hover .dropbtn {
-                background-color: #3e8e41;
-            } */
-
-            .rangkuman {
-                width: 100%;
-            }
-
-            .isi-rangkuman h1 {
-                font-size: 24px;
-            }
-
-            .halaman {
-                display: none;
-                font-weight: bold;
-            }
-
-            nav {
-                display: block;
-                flex-direction: row;
-                flex-wrap: wrap;
-                margin-left: 0;
-                margin-right: 0;
-            }
-
-            /* Because we are in mobile mode, we want to display it as a
-       vertical list */
-            nav ul {
-                display: block;
-            }
-
-            /* We have two lists: the first one are the always visibile items
-       in the menu bar. The second one is the one that will be hidden */
-            nav ul:last-child {
-                width: 100%;
-                flex-basis: 100%;
-            }
-
-            nav ul li {
-                margin-bottom: 0;
-                width: 100%;
-                text-align: center;
-                padding: 0.5em;
-            }
-
-            input[type='checkbox']:not(:checked)+ul {
-                display: none;
-            }
-
-            nav label {
-                background-color: green;
-                text-align: center;
-                display: block;
-                padding: 0.5em;
-                line-height: 1.6em;
-                align-self: center;
-            }
-
-        }
-    </style>
+    <title>Halaman 5</title>
+    <link rel="stylesheet" href="pertemuanstyle.css">
 </head>
 
 <body>
+
+    <!-- NAVBAR MULAI DARI SINI -->
+
     <nav>
-        <!-- Always visible items in the nav bar -->
-        <!-- <ul>
-            <li>
-                <a href="Homepage">Homepage</a>
-            </li>
-        </ul> -->
         <label for='menu' tabindex="0">
             Halaman
         </label>
         <input id='menu' type='checkbox' />
-        <!-- The collapsable menu -->
         <ul>
-            <li><a href='https://zahraramadhani.github.io/rangkuman'>Homepage</a></li>
-            <li><a href='pertemuan1.html'>Pertemuan 1</a></li>
-            <li><a href='pertemuan2.html'>Pertemuan 2</a></li>
-            <li><a href='pertemuan3.html'>Pertemuan 3</a></li>
-            <li><a href='pertemuan4.html'>Pertemuan 4</a></li>
+            <li><a href='./'>Homepage</a></li>
+            <li><a href='./pertemuan1'>Pertemuan 1</a></li>
+            <li><a href='./pertemuan2' class="active">Pertemuan 2</a></li>
+            <li><a href='./pertemuan3'>Pertemuan 3</a></li>
+            <li><a href='./pertemuan4'>Pertemuan 4</a></li>
             <li><a href='#' class="active">Pertemuan 5</a></li>
-            <li><a href='pertemuan6.html'>Pertemuan 6</a></li>
-            <li><a href='pertemuan7.html'>Pertemuan 7</a></li>
-            <li><a href='pertemuan8.html'>Pertemuan 8</a></li>
-            <li><a href='pertemuan9.html'>Pertemuan 9</a></li>
-            <li><a href='pertemuan10.html'>Pertemuan 10</a></li>
-            <li><a href='pertemuan11.html'>Pertemuan 11</a></li>
-            <li><a href='pertemuan12.html'>Pertemuan 12</a></li>
-            <li><a href='pertemuan13.html'>Pertemuan 13</a></li>
-            <li><a href='pertemuan14.html'>Pertemuan 14</a></li>
+            <li><a href='./pertemuan6'>Pertemuan 6</a></li>
+            <li><a href='./pertemuan7'>Pertemuan 7</a></li>
+            <li><a href='./pertemuan8'>Pertemuan 8</a></li>
+            <li><a href='./pertemuan9'>Pertemuan 9</a></li>
+            <li><a href='./pertemuan10'>Pertemuan 10</a></li>
+            <li><a href='./pertemuan11'>Pertemuan 11</a></li>
+            <li><a href='./pertemuan12'>Pertemuan 12</a></li>
+            <li><a href='./pertemuan13'>Pertemuan 13</a></li>
+            <li><a href='./pertemuan14'>Pertemuan 14</a></li>
         </ul>
     </nav>
+
+    <!-- AKHIR DARI NAVBAR DISINI -->
+
+
+    <!-- INI SIDEBAR -->
+
     <div class="halaman">
-        <a href="https://zahraramadhani.github.io/rangkuman">
+        <a href="./">
             <div class="homepage">
                 Homepage
             </div>
         </a>
-        <a href="pertemuan1.html">
+        <a href="./pertemuan1">
             <span>
                 Pertemuan 1
             </span>
         </a>
-        <a href="pertemuan2.html">
+        <a href="./pertemuan2">
             <span>
                 Pertemuan 2
             </span>
         </a>
-        <a href="pertemuan3.html">
+        <a href="./pertemuan3">
             <span>
                 Pertemuan 3
             </span>
         </a>
-        <a href="pertemuan4.html" >
+        <a href="./pertemuan4">
             <span>
                 Pertemuan 4
             </span>
@@ -277,155 +75,297 @@
                 Pertemuan 5
             </span>
         </a>
-        <a href="pertemuan6.html">
+        <a href="./pertemuan6">
             <span>
                 Pertemuan 6
             </span>
         </a>
-        <a href="pertemuan7.html">
+        <a href="./pertemuan7">
             <span>
                 Pertemuan 7
             </span>
         </a>
-        <a href="pertemuan8.html">
+        <a href="./pertemuan8">
             <span>
                 Pertemuan 8
             </span>
         </a>
-        <a href="pertemuan9.html">
+        <a href="./pertemuan9">
             <span>
                 Pertemuan 9
             </span>
         </a>
-        <a href="pertemuan10.html">
+        <a href="./pertemuan10">
             <span>
                 Pertemuan 10
             </span>
         </a>
-        <a href="pertemuan11.html">
+        <a href="./pertemuan11">
             <span>
                 Pertemuan 11
             </span>
         </a>
-        <a href="pertemuan12.html">
+        <a href="./pertemuan12">
             <span>
                 Pertemuan 12
             </span>
         </a>
-        <a href="pertemuan13.html">
+        <a href="./pertemuan13">
             <span>
                 Pertemuan 13
             </span>
         </a>
-        <a href="pertemuan14.html">
+        <a href="./pertemuan14">
             <span>
                 Pertemuan 14
             </span>
         </a>
     </div>
-    <div class="judul">
-        <h1>Pertemuan 5</h1>
 
+    <!-- AKHIR DARI SIDEBAR -->
+
+
+    <div class="isi">
+        <h1 id="pertemuan">Pertemuan 5</h1>
         <div class="rangkuman">
-            <div class="judul-rangkuman">
-                <div class="isi-rangkuman">
-                    <h1>
-                        Dampak Komputer & Teknologi Pada Lingkungan Masyarakat Sekitar
-                    </h1>
-                    <img src="images/komputerdanmasyarakat.jpg" alt="" id="gambar">
+            <div class="isi-rangkuman">
+                <h1>
+                    KOMPUTER DAN PEMERINTAHAN
+                </h1>
+
+                <h3>
+                    A. E-Government
+                </h3>
+                <p id="paragraf">
+                    Hadirnya teknologi internet semakin memudahkan masyarakat dalam berbagai macam aktifitas. Bidang pemerintahan dalam hal ini pemerintah sudah menggunakan teknologi untuk mempermudah masyarakat mengenal dan terutama pemanfaatan teknologi dibuat guna melayani masyarakat secara luas. Dengan menggunakan teknologi sebagai alat pengolahan data, pemerintah dapat mengolah data seperti data penduduk, kesehatan, tenaga kerja, dan sebagainya. 
+                </p>
+                <p id="paragraf">
+                    E-government merupakan aplikasi yang diluncurkan pemerintah untuk melayani masyarakat secara online. Terjadinya komunikasi yang dilakukan pada warga dengan pemerintah ataupun sebaliknya, adanya peningkatan efisiensi pada suatu organisasi, tentunya dapat menghemat pembayaran pajak. Layanan publik dengan mudahnya melaporkan suatu keluhan ataupun keresahan yang terjadi pada lingkungan. E-government meningkat secara signifikan tidak hanya pada pemerintahan pusat namun pemerintahan daerah saat ini sudah mulai menggunakannya.
+                </p>
+
+                <ol id="list" type="a">
+                    <li>
+                        Definisi E-government
+                    </li>
                     <p>
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut obcaecati veniam libero tempora
-                        vitae ratione quam dolorem ad laborum blanditiis earum rerum nemo dolor sequi architecto,
-                        numquam nihil quas suscipit omnis. Hic est non dolor. Similique mollitia dicta doloribus amet
-                        sit sapiente modi voluptate alias explicabo accusantium? Esse molestias repudiandae animi
-                        dignissimos mollitia cum minima consequatur? Suscipit repellat cum delectus in nobis natus
-                        accusantium libero reiciendis voluptate nam. Cupiditate quia facere libero error deleniti in
-                        excepturi architecto nulla minus veniam. Velit numquam repellendus earum reprehenderit atque
-                        fuga eum enim perferendis dicta. Ratione facere, aperiam illum dolore eligendi ipsa aliquid
-                        natus aut ea? Illum repellendus non animi pariatur nisi doloribus perferendis at? Ex incidunt
-                        iste repellendus tempora, cupiditate ad velit saepe placeat dolore iure consequatur magnam
-                        aliquam voluptas soluta debitis minus. Doloribus hic voluptate sint adipisci, error neque iste
-                        iusto at mollitia rerum, eaque recusandae aliquid atque, nulla molestiae saepe dolorem alias
-                        quaerat consectetur ipsam. Voluptatem incidunt sit, fugit minima labore dolores distinctio ipsam
-                        ratione provident culpa molestiae blanditiis, eum dolorem tenetur, pariatur dolor asperiores
-                        quas illum debitis. Commodi, error? Fugit, quidem cupiditate! Iste sint perspiciatis ipsum vel
-                        deserunt in voluptatibus at? Quibusdam impedit architecto tempora nobis. Laborum neque tenetur
-                        eum provident modi debitis totam veniam sit iste eaque earum necessitatibus eos magnam
-                        voluptatibus commodi similique quas facere aliquam reiciendis, dolorum pariatur dignissimos,
-                        dolore vero! Quidem fugiat dolor architecto delectus optio. Optio enim dolore laudantium
-                        necessitatibus ad vero quasi facilis odit doloribus, commodi inventore dicta tenetur dolor magni
-                        quisquam. Dolorem magnam rem perferendis illo neque unde vel quasi minus mollitia sapiente a
-                        tempora ullam molestiae, velit iste veniam ducimus ex in repudiandae eligendi ipsam nemo
-                        officia! Doloremque, rem quaerat qui iusto perspiciatis laborum et illum tempore quis nemo
-                        necessitatibus provident accusantium est dolorum amet suscipit ut voluptas eos omnis minus nulla
-                        architecto voluptates quia voluptate. Itaque voluptas cupiditate iste, ab perferendis repellat
-                        recusandae at praesentium earum obcaecati vel illo temporibus architecto neque quis laboriosam
-                        quidem libero sit pariatur, possimus officiis voluptatibus cumque odio. Temporibus similique
-                        veniam quas distinctio corrupti obcaecati rem quod? Nisi facere hic beatae odit voluptate. Hic,
-                        iste facilis! Vero commodi dignissimos sapiente eligendi neque reiciendis quas, incidunt magnam
-                        odit dolor voluptatum quo beatae cupiditate quidem eius architecto quaerat vitae ab cum, libero
-                        fugiat. Autem sapiente praesentium natus harum voluptate aliquid labore quos placeat reiciendis
-                        dolorem blanditiis, aperiam, sint, voluptatibus soluta! Amet voluptas aliquam maxime
-                        reprehenderit animi neque sapiente! Unde animi dolore iure nostrum nemo, minima at veniam
-                        facilis doloremque consectetur quasi enim tempore similique sit natus aperiam. Aliquid quas
-                        laudantium voluptate, vel explicabo odit. At dolorem nobis mollitia expedita, a repellat
-                        nesciunt doloribus deserunt pariatur eius sed amet asperiores dolores ipsam vel. Quam voluptates
-                        eum iste voluptas vero dicta maxime tenetur dolorum excepturi mollitia, quo aperiam quis facere
-                        quae expedita minima iure tempora architecto consectetur laudantium reprehenderit vitae. Atque
-                        accusamus autem aspernatur nesciunt facere facilis exercitationem ullam eligendi sequi ipsum.
-                        Modi quo, pariatur fugiat voluptate iste obcaecati dolorem dicta hic. Aliquid expedita nisi
-                        numquam tenetur aut laborum minima accusantium, eum vel et quam ea, mollitia, excepturi
-                        cupiditate? Nihil fugit, nesciunt maiores consequatur aperiam aut autem sint molestias minima
-                        delectus rem hic neque dolorum ea placeat similique excepturi distinctio consectetur laudantium
-                        mollitia eaque accusantium id recusandae. Quasi dolorum blanditiis eos temporibus debitis magni
-                        inventore, explicabo sint omnis labore amet numquam incidunt. Assumenda ipsa enim, amet iure ex
-                        doloribus inventore sit asperiores perspiciatis, qui, repellendus necessitatibus! Suscipit quae
-                        fuga quasi, temporibus cumque laborum illo iusto sunt beatae commodi veniam voluptatum eveniet
-                        quis repellendus! Minima quis mollitia perspiciatis voluptatibus consequuntur, doloremque
-                        delectus officia sit vero incidunt sint quibusdam cupiditate dolores, modi id similique
-                        repellendus eligendi porro voluptates quas at quod culpa? Explicabo, incidunt facilis architecto
-                        doloremque maxime, placeat itaque repellendus temporibus earum, nobis iure unde labore saepe hic
-                        fugit molestiae reprehenderit libero dolor quasi qui ad eius recusandae quo distinctio. Optio
-                        deleniti fugiat earum minus porro quia, veritatis dolorum quam delectus, beatae a inventore
-                        blanditiis aut doloremque laudantium vel eveniet quibusdam. Sequi impedit ipsa quas voluptatem
-                        cupiditate quod, odio quis eveniet eum consectetur aliquid minima optio nobis cum vero qui
-                        numquam deleniti iusto! Quibusdam harum in dignissimos eum officia dolorem, nostrum voluptatum
-                        quod ex molestias blanditiis. Neque vitae quia id rem perferendis. Doloribus assumenda dolores
-                        laborum repellendus illum ipsa labore! Dicta nisi vel odit nemo. Quasi facilis, eos id
-                        perferendis assumenda excepturi pariatur nulla eius vitae consectetur laborum repudiandae unde
-                        nesciunt quia voluptas incidunt, quisquam dolor voluptates? Commodi, expedita inventore. Non qui
-                        quaerat excepturi recusandae ratione facere natus officia veniam, molestiae quas tenetur minima
-                        iusto reprehenderit? Sint reprehenderit doloribus, placeat, aspernatur voluptatum natus eveniet
-                        ullam tempore optio eaque quas cumque ad. Impedit tenetur quos aut nam laboriosam. Vero at
-                        delectus nostrum reiciendis? Porro adipisci maiores ut. Fugit velit temporibus facere illum
-                        repellendus deserunt porro earum minus maxime, maiores, sed incidunt. Quae, quia corrupti
-                        mollitia et modi necessitatibus eveniet quibusdam vel debitis minima eos doloremque, ea,
-                        architecto quasi itaque veritatis. Incidunt consequatur at quibusdam in facere! Delectus minus,
-                        deserunt impedit laborum officiis, tempore suscipit esse quidem quis quia est quaerat ipsa,
-                        repudiandae repellendus. Recusandae, suscipit beatae quis ipsam iusto doloremque, quod, fugiat
-                        accusamus odio totam illum necessitatibus quae ad fugit quisquam harum modi quidem consequuntur
-                        placeat deserunt rem impedit nisi soluta laborum. Beatae animi, consequatur facere adipisci nemo
-                        reiciendis fugit quos praesentium nisi sit, quod, commodi perferendis quisquam cupiditate ipsa
-                        architecto ad deserunt temporibus accusantium non exercitationem blanditiis alias officia quis.
-                        Aut fuga dolore, ab expedita perferendis dignissimos quidem, omnis ipsa earum, cum accusantium
-                        molestiae laborum itaque deleniti tempore porro eveniet temporibus unde culpa? Dolorem excepturi
-                        magnam quibusdam cumque nihil a eligendi minus tempore modi, architecto adipisci, totam mollitia
-                        animi atque illum doloribus consequuntur alias necessitatibus neque ex molestiae, placeat
-                        praesentium deserunt. Doloremque laudantium, aliquid sapiente aspernatur illo error magnam
-                        ducimus deleniti accusamus delectus architecto reiciendis, accusantium dolore eos eius aut
-                        impedit, necessitatibus eligendi. Earum, nostrum. Velit magnam officiis consequatur veniam, quis
-                        quaerat voluptatum distinctio saepe sint quas doloribus ipsa sapiente tempora. Eaque dolore
-                        autem aliquam corporis quasi ipsam, quaerat sed?
-
+                        E-government merupakan pelayanan pemerintahan yang menggunaan teknologi digital dengan tujuan untuk meningkatkan efektifitas dan efisiensi dalam penyampaian layanan.
                     </p>
-                    <img src="images/tiktokori.png" alt="" id="tiktok">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consequuntur ex rerum est optio dolor nisi dicta consequatur molestiae tempore similique temporibus, atque deleniti debitis deserunt. Doloremque non quos ut atque soluta esse magni deleniti sit numquam dignissimos, est porro blanditiis veniam molestias excepturi modi labore voluptas sunt quis, a maxime aliquid et officia? Accusantium laborum quo unde maiores nesciunt hic culpa temporibus odio corrupti? Alias obcaecati numquam qui corporis, modi inventore fuga omnis provident expedita quia asperiores animi rerum eligendi sit dolores consequuntur sapiente perspiciatis nostrum ipsam iure aliquam quam voluptatibus vitae esse! Quibusdam pariatur repudiandae, in ad quia quos nisi ipsa sapiente odio doloremque harum soluta dolor nesciunt aliquid voluptatum ipsum beatae consectetur a. Minima nobis voluptates commodi?</p>
-                </div>
+                    <li>
+                        Manfaat E-government
+                    </li>
+                    <ol id="list2" type="1">
+                        <li>
+                            Memberikan kualitas dalam bentuk pelayan kepada masyarakat.  
+                        </li>
+                        <li>
+                            Sebagai sarana keterbukaan ditubuh pemerintah sehingga bisa dijadikan sebagai faktor pengontrol kinerja pemerintah dimana akhirnya pemerintah tersebut dapat bekerja tanpa penyelewengan penggunaan fungsinya.  
+                        </li>
+                        <li>
+                            Menghemat biaya administrasi. 
+                        </li>
+                        <li>
+                            Pemerintahan dapat menjawab serta mencari solusi untuk berbagai permasalahan yang dihadapi.
+                        </li>
+                    </ol>
+                    <li>
+                        Maksud serta tujuan dari peningkatan E-government
+                    </li>
+                    <p>
+                        Tujuannya adalah untuk meningkatkan mutu pelayanan kepada masyarakat luas terkait proses administrasi Negara atau keperluan lain-lain. Untuk meningkatkan kualitas pelayanan tersebut terdapat beberapa tujuan yang akan tercapai :
+                    </p>
+                    <ol id="list" type="1">
+                        <li>
+                            Kebutuhan masyarakat akan informasi terpenuhi
+                        </li>
+                        <li>
+                            Peningkatan perekonomian harus berhubungan interaktif kepada seluruh pedagang ataupun di dalam dunia bisnis.
+                        </li>
+                        <li>
+                            Terdapat fasilitas yang mendukung terjadinya dialog terbuka antara pemerintah dengan masyarakat.
+                        </li>
+                        <li>
+                            Transaksi serta layanan antara lembaga pemerintahan yang transparansi.
+                        </li>
+                    </ol>
+                </ol>
+
+                <h3>
+                    B. Pemicu Utama E-government
+                </h3>
+                <p id="paragraf">
+                    Negara Indonesia terhitung terlambat dalam menerapkan dan mengembangkan bentuk pelayanan e-government ini dibandingkan dengan negara maju. Perkembangan aplikasi di negara maju sangat cepat. Cepatnya perkembangan aplikasi komputer sudah mulai menimbulkan masalah untuk negara-negara maju sehingga hal tersebut merupaka hal serius dan diperlukan perhatian khusus untuk menangani hal tersebut.
+                </p>
+                <p id="paragraf">
+                    Pemicu utama perkembangan e-government menurut sejarahnya ada tiga konsep, yaitu :
+                </p>
+                <ol id="list" type="1">
+                    <li>
+                        <p>
+                            Di era globalisasi yang semakin pesat, banyak permasalahan yang dihadapi masyarakat, seperti perdagangan bebas bea cukai, pajak cukai, hak asasi manusia, dan pembukaan pasar  yang memerlukan perhatian pemerintah pusat. Pemerintah jelas perlu mengubah posisinya di dalam negeri, pertama di dalam pemerintahan dan di masyarakat, dan pemerintah perlu benar-benar memperhatikan seluruh aspek  masyarakat.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Akibat kemajuan pada teknologi tentunya sangat dengan mudah data dan informasi dapat diakses masyarakat di seluruh belahan dunia, hanya butuh beberapa detik untuk mengakses sebuat data atau informasi yang ada. Peranan pemerintah untuk mengatur bagaimana menyikapi dalam melayani masyarakat, dikarenakan secara tidak langsung masyarakat yang mengambil alih.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Peningkatan pada kualiats pola pikir atau kegiatan masyarakat Dimana dunia industri memerlukan tenaga yang lebih mengerti teknologi terbaru dari mesinnya. Secara tidak langsung masyarakat menghimbau kepada pemerintah bagaimana caranya agar dapat meningkatkan kinerjanya.
+                        </p>
+                    </li>
+                </ol>
+
+                <p id="paragraf">
+                    Ketiga aspek tersebut merupakan tekanan yang dilakukan oleh masyarakat pada pemerintah agar dapat memperbaiki kinerjanya yang lebih signifikan, dengan adanya teknologi.
+                </p>
+
+                <h3>
+                    C. Strategi Pengembangan E-government
+                </h3>
+                <p>
+                    Strategi pada e-government dikerjakan dalam 6 strategi, diantaranya : 
+                </p>
+
+                <ol id="list" type="1">
+                    <li>
+                        Sistem pelayanan yang dapat dijangkau oleh masyarakat luas dan dapat dipercaya. 
+                    </li>
+                    <li>
+                        Pengembangkan industri telekomunikasi dan teknologi informasi, harus mengikut sertakan dunia usaha.
+                    </li>
+                    <li>
+                        Sistem manajemen pada proses kerja pemerintah dan pemerintah daerah otonom secara holistik.
+                    </li>
+                    <li>
+                        Dalam pengembangan industri telekomunikasi dan informasi, dunia usaha harus memanfaatkan teknologi. 
+                    </li>
+                    <li>
+                        Melaksanakan pengembangan secara sistematik melalui tahapan-tahapan yang realistis dan terukur. 
+                    </li>
+                    <li>
+                        Pengembangan kapasitas SDM ditubuh pemerintah pusat dan daerah yang disertai dengan meningkatnya e-literacy masyarakat.
+                    </li>
+                </ol>
+
+                <p>
+                    Beberapa contoh aplikasi yang menunjang administrasi pemerintah dan sukses memberikan pelayanan maupun informasi yang berguna bagi masyarakat, antara lain :
+                </p>
+
+                <ol id="list" type="1">
+                    <li>
+                        mCity
+                    </li>
+                    <p>
+                        Aplikasi mCity adalah sebuah aplikasi mengenai informasi suatu kota yang bisa diakses melalui smartphone. Singkatnya, aplikasi ini dapat diartikan sebagai penunjuk jalan serta pemberi informasi mengenai suatu kota. Informasi lengkap mengenai kota tersebut seperti info tentang kuliner, tempat wisata, hingga penginapan.
+                    </p>
+                    <li>
+                        Qlue
+                    </li>
+                    <p>
+                        Aplikasi ini memudahkan masyarakat untuk menginformasikan kerusakan fasilitas, keluhan dan sebagainya. Selain itu masyarakat dapat mengupload foto jika ada masalah yang terjadi di suatu lingkungan masyarakat tersebut berada.
+                    </p>
+                    <li>
+                        Lapor!
+                    </li>
+                    <p>
+                        Aplikasi Lapor! merupakan sarana untuk menyampaikan aspirasi serta pengaduan dari masyarakat yang berbasis media sosial. Proses penanganan keluhan pada aplikasi ini dapat dipantau dan diawasi oleh publik.
+                    </p>
+                    <li>
+                        Info BMKG
+                    </li>
+                    <p>
+                        Aplikasi ini dibuat dan digunakan oleh BMKG (Badan Meteorologi, Klimatologi, dan Geofisika). Pada aplikasi ini kita bisa melihat perkiraan cuaca, analisis iklim, dan informasi terjadinya gempa di seluruh kabupaten dan kota di Indonesia. Aplikasi ini juga akan memberikan notifikasi jika gempa yang terjadi berpotensi tsunami.
+                    </p>
+                    <li>
+                        BPOM Mobile
+                    </li>
+                    <p>
+                        Aplikasi ini dibuat dan digunakan oleh BPOM (Badan Pengawas Obat dan Makanan). Pada aplikasi ini masyarakat bisa mengecek suatu produk menggunakan Kode QPR ataupun Kode Batang.
+                    </p>
+                </ol>
+
+                <h3>
+                    D. Tugas Humas Pemerintah
+                </h3>
+
+                <p id="paragraf">
+                    Transparansi dalam menjalankan fungsi sebuah lembaga serta transparan dalam memberikan informasi kepada masyarakat sangat penting karena masyarakat berhak untuk mengetahui suatu kebenaran. Beberapa tugas penting humas suatu lembaga menurut yang dikutip oleh Amalia (2012):
+                </p>
+
+                <ol id="list" type="a">
+                    <li>
+                        Menurut Ardianto, E. (2011:239) menjelaskan bahwa kebijakan publik dan pelayanan publik merupakan kegiatan utama pemerintah. Untuk memberikan pelayanan terbaik bagi masyarakat, pemerintah harus memiliki birokrasi yang sederhana. 
+                    </li>
+                    <li>
+                        Menurut Cutlip.C dan Broom (2007:468) praktisi humas pemerintah memiliki tugas utama yakni memberikan informasi. Harus diingatkan juga bahwa dalam sistem politik harus mampu memberi jarak (membatasi) peran khusus.
+                    </li>
+                </ol>
+
+                <p id="paragraf">
+                    Joice J Gordon mengartikan humas seharusnya berperan khusus yang berfungsi untuk menjaga dan mempertahankan hubungan yang baik antara pemerintah dengan masyarakat. Berikut tugas humas yang dijelaskan Gordon:
+                </p>
+
+                <ol id="list" type="1">
+                    <li>
+                        Memberikan informasi yang jelas dan benar kepada konstituen tentang agenda kepemerintahan. 
+                    </li>
+                    <li>
+                        Memastikan bahwa adanya suatu kerjasama yang aktif di dalam sebuah program kepemerintahan dan adanya kewajiban untuk mematuhi kebijakan.
+                    </li>
+                    <li>
+                        Memajukan dan mendorong masyarakat agar dapat mendukung kebijakan serta program pemerintah. 
+                    </li>
+                    <li>
+                        Dapat menyampaikan aspirasi masyarakat kepada pemerintah.
+                    </li>
+                </ol>
+
+                <h3>
+                    E. Isu Sosial dan masalah
+                </h3>
+
+                <p id="paragraf">
+                    Berikut ini adalah beberapa isu sosial dan masalah yang muncul dari penerapan sistem eGovernment. 
+                </p>
+
+                <ol id="list" type="1">
+                    <li>
+                        Semakin bebasnya dalam hal akses situs pemerintah, dapat menimbulkan cyber crime sehingga dapat merusak sistem komputer pada e-government. 
+                    </li>
+                    <li>
+                        Semakin berkurangnya komunikasi atau interaksi sosial antara admin pemerintah dengan masyarakat. 
+                    </li>
+                    <li>
+                        Kurangnya pengetahuan atara masyarakat satu dengan yang lainnya dalam penggunaan e-government.
+                    </li>
+                    <li>
+                        Kurangnya pelayanan yang diberika, karena sistem manajemen atau proses kerja dalam hal kesiapan prosedur dan peraturan masih membatasi SDM. 
+                    </li>
+                    <li>
+                        Belum kuatnya strategi mengenai anggaran yang digunakan untuk pengembangan situs e-government. 
+                    </li>
+                    <li>
+                        Sejumlah faktor seperti keamanan informasi, otentikasi, dan standarisasi antar situs secara andal, aman, dan terpercaya kurang mendapat perhatian. 
+                    </li>
+                    <li>
+                        Kemampuan masyarakat untuk mengakses jaringan internet masih terdapat kesenjangan. Meskipun telah lama diatur dalam undang-undang untuk segera diterapkan di seluruh sendi pemerintahan, namun tidak semua daerah menerapkan sistem e-government.
+                    </li>
+                </ol>
+
+
             </div>
         </div>
     </div>
+    </div>
 
+    <a href="#halaman" id="myBtn" title="Go to top">
+        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+        </svg>
+
+    </a>
 
 
 

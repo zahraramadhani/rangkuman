@@ -98,6 +98,10 @@ ul{
     display: flex;
 }
 
+.bullet {
+    list-style: square;
+}
+
 
 .active {
     background-color: grey;

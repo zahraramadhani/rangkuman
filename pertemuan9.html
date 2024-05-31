@@ -7,287 +7,85 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman 1</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-            font-family: 'poppins', sans-serif;
-        }
-
-        .halaman {
-            background-color: white;
-            color: black;
-            padding: 10px;
-            position: fixed;
-            top: 16px;
-            left: 16px;
-            border: solid;
-            border-color: green;
-            border-radius: 10px;
-        }
-
-        .halaman span,
-        a:link,
-        a:visited {
-            padding: 5px;
-            display: block;
-            color: black;
-            text-decoration: none;
-        }
-
-        .halaman a:hover {
-            background-color: grey;
-            transition: background-color 0.3s;
-        }
-
-        .judul {
-            padding-top: 100px;
-            padding-bottom: 100px;
-            color: white;
-            text-align: center;
-            background-image: url(images/background.jpg);
-            background-size: cover;
-            background-position: center;
-        }
-
-        .rangkuman h1 {
-            text-align: center;
-            margin: 20px;
-        }
-
-        .rangkuman p {
-            text-align: justify;
-        }
-
-        .rangkuman {
-            color: black;
-            background-color: white;
-            margin: auto;
-            width: 60%;
-            border: outset;
-            padding: 0px 15px 15px 15px;
-            border-radius: 20px;
-        }
-
-        .dropdown {
-            display: none;
-        }
-
-        #gambar {
-            width: 50%;
-        }
-
-        #tiktok{
-            width: 150px;
-        }
-
-
-        .homepage {
-            background-color: rgb(201, 255, 201);
-            text-align: center;
-        }
-
-        nav {
-            display: none;
-        }
-
-        nav input[type='checkbox'],
-        nav label {
-            display: none;
-
-        }
-
-        .active {
-            background-color: grey;
-            cursor: unset;
-        }
-
-        @media (max-width:412px) {
-
-            /* Dropdown Button */
-            /* .dropbtn {
-                width: inherit;
-                background-color: #04AA6D;
-                color: white;
-                padding: 16px;
-                font-size: 16px;
-                border: none;
-            } */
-
-            /* The container <div> - needed to position the dropdown content */
-            /* .dropdown {
-                width: 100%;
-                position: relative;
-                display: inline-block;
-            } */
-
-            /* Dropdown Content (Hidden by Default) */
-            /* .dropdown-content {
-                width: inherit;
-                display: none;
-                position: absolute;
-                background-color: #f1f1f1;
-                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-                z-index: 1;
-            } */
-
-            /* Links inside the dropdown */
-            /* .dropdown-content a {
-                text-align: center;
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-            } */
-
-            /* Change color of dropdown links on hover */
-            /* .dropdown-content a:hover {
-                background-color: #ddd;
-            } */
-
-            /* Show the dropdown menu on hover */
-            /* .dropdown:hover .dropdown-content {
-                display: block;
-            } */
-
-            /* Change the background color of the dropdown button when the dropdown content is shown */
-            /* .dropdown:hover .dropbtn {
-                background-color: #3e8e41;
-            } */
-
-            .rangkuman {
-                width: 100%;
-            }
-
-            .isi-rangkuman h1 {
-                font-size: 24px;
-            }
-
-            .halaman {
-                display: none;
-                font-weight: bold;
-            }
-
-            nav {
-                display: block;
-                flex-direction: row;
-                flex-wrap: wrap;
-                margin-left: 0;
-                margin-right: 0;
-            }
-
-            /* Because we are in mobile mode, we want to display it as a
-       vertical list */
-            nav ul {
-                display: block;
-            }
-
-            /* We have two lists: the first one are the always visibile items
-       in the menu bar. The second one is the one that will be hidden */
-            nav ul:last-child {
-                width: 100%;
-                flex-basis: 100%;
-            }
-
-            nav ul li {
-                margin-bottom: 0;
-                width: 100%;
-                text-align: center;
-                padding: 0.5em;
-            }
-
-            input[type='checkbox']:not(:checked)+ul {
-                display: none;
-            }
-
-            nav label {
-                background-color: green;
-                text-align: center;
-                display: block;
-                padding: 0.5em;
-                line-height: 1.6em;
-                align-self: center;
-            }
-
-        }
-    </style>
+    <title>Halaman 9</title>
+    <link rel="stylesheet" href="pertemuanstyle.css">
 </head>
 
 <body>
+
+    <!-- NAVBAR MULAI DARI SINI -->
+
     <nav>
-        <!-- Always visible items in the nav bar -->
-        <!-- <ul>
-            <li>
-                <a href="Homepage">Homepage</a>
-            </li>
-        </ul> -->
         <label for='menu' tabindex="0">
             Halaman
         </label>
         <input id='menu' type='checkbox' />
-        <!-- The collapsable menu -->
         <ul>
-            <li><a href='https://zahraramadhani.github.io/rangkuman'>Homepage</a></li>
-            <li><a href='pertemuan1.html'>Pertemuan 1</a></li>
-            <li><a href='pertemuan2.html'>Pertemuan 2</a></li>
-            <li><a href='pertemuan3.html'>Pertemuan 3</a></li>
-            <li><a href='pertemuan4.html'>Pertemuan 4</a></li>
-            <li><a href='pertemuan5.html'>Pertemuan 5</a></li>
-            <li><a href='pertemuan6.html'>Pertemuan 6</a></li>
-            <li><a href='pertemuan7.html'>Pertemuan 7</a></li>
-            <li><a href='pertemuan8.html'>Pertemuan 8</a></li>
+            <li><a href='./'>Homepage</a></li>
+            <li><a href='./pertemuan1'>Pertemuan 1</a></li>
+            <li><a href='./pertemuan2'>Pertemuan 2</a></li>
+            <li><a href='./pertemuan3'>Pertemuan 3</a></li>
+            <li><a href='./pertemuan4'>Pertemuan 4</a></li>
+            <li><a href='./pertemuan5'>Pertemuan 5</a></li>
+            <li><a href='./pertemuan6'>Pertemuan 6</a></li>
+            <li><a href='./pertemuan7'>Pertemuan 7</a></li>
+            <li><a href='./pertemuan8'>Pertemuan 8</a></li>
             <li><a href='#' class="active">Pertemuan 9</a></li>
-            <li><a href='pertemuan10.html'>Pertemuan 10</a></li>
-            <li><a href='pertemuan11.html'>Pertemuan 11</a></li>
-            <li><a href='pertemuan12.html'>Pertemuan 12</a></li>
-            <li><a href='pertemuan13.html'>Pertemuan 13</a></li>
-            <li><a href='pertemuan14.html'>Pertemuan 14</a></li>
+            <li><a href='./pertemuan10'>Pertemuan 10</a></li>
+            <li><a href='./pertemuan11'>Pertemuan 11</a></li>
+            <li><a href='./pertemuan12'>Pertemuan 12</a></li>
+            <li><a href='./pertemuan13'>Pertemuan 13</a></li>
+            <li><a href='./pertemuan14'>Pertemuan 14</a></li>
         </ul>
     </nav>
+
+    <!-- AKHIR DARI NAVBAR DISINI -->
+
+
+    <!-- INI SIDEBAR -->
+
     <div class="halaman">
-        <a href="https://zahraramadhani.github.io/rangkuman">
+        <a href="./">
             <div class="homepage">
                 Homepage
             </div>
         </a>
-        <a href="pertemuan1.html">
+        <a href="./pertemuan1">
             <span>
                 Pertemuan 1
             </span>
         </a>
-        <a href="pertemuan2.html">
+        <a href="./pertemuan2">
             <span>
                 Pertemuan 2
             </span>
         </a>
-        <a href="pertemuan3.html">
+        <a href="./pertemuan3">
             <span>
                 Pertemuan 3
             </span>
         </a>
-        <a href="pertemuan4.html" >
+        <a href="./pertemuan4">
             <span>
                 Pertemuan 4
             </span>
         </a>
-        <a href="pertemuan5.html">
+        <a href="./pertemuan5">
             <span>
                 Pertemuan 5
             </span>
         </a>
-        <a href="pertemuan6.html">
+        <a href="./pertemuan6">
             <span>
                 Pertemuan 6
             </span>
         </a>
-        <a href="pertemuan7.html">
+        <a href="./pertemuan7">
             <span>
                 Pertemuan 7
             </span>
         </a>
-        <a href="pertemuan8.html">
+        <a href="./pertemuan8">
             <span>
                 Pertemuan 8
             </span>
@@ -297,135 +95,426 @@
                 Pertemuan 9
             </span>
         </a>
-        <a href="pertemuan10.html">
+        <a href="./pertemuan10">
             <span>
                 Pertemuan 10
             </span>
         </a>
-        <a href="pertemuan11.html">
+        <a href="./pertemuan11">
             <span>
                 Pertemuan 11
             </span>
         </a>
-        <a href="pertemuan12.html">
+        <a href="./pertemuan12">
             <span>
                 Pertemuan 12
             </span>
         </a>
-        <a href="pertemuan13.html">
+        <a href="./pertemuan13">
             <span>
                 Pertemuan 13
             </span>
         </a>
-        <a href="pertemuan14.html">
+        <a href="./pertemuan14">
             <span>
                 Pertemuan 14
             </span>
         </a>
     </div>
-    <div class="judul">
-        <h1>Pertemuan 9</h1>
 
+    <!-- AKHIR DARI SIDEBAR -->
+
+
+    <div class="isi">
+        <h1 id="pertemuan">Pertemuan 9</h1>
         <div class="rangkuman">
-            <div class="judul-rangkuman">
-                <div class="isi-rangkuman">
-                    <h1>
-                        Dampak Komputer & Teknologi Pada Lingkungan Masyarakat Sekitar
-                    </h1>
-                    <img src="images/komputerdanmasyarakat.jpg" alt="" id="gambar">
+            <div class="isi-rangkuman">
+                <h1>
+                    DUNIA USAHA
+                </h1>
+
+                <h3>
+                    A. Manfaat Komputer Dalam Bisnis
+                </h3>
+                <p id="paragraf">
+                    Dalam dunia bisnis, komputer biasanya digunakan untuk proses administrasi keuangan, statistik
+                    kemajuan, data stok barang, prediksi untuk penjualan, bahkan hingga untuk merencanakan bisnis masa
+                    depan, dsb. Dalam hal tersebut diperlukannya data-data perusahaan yang valid dan diinput kedalam
+                    software komputer, dikelola dalam software, sehingga menghasilkan laporan yang diinginkan oleh
+                    owner/manager sebuah usaha untuk mengambil sebuah kebijakan untuk suatu usaha atau mengetahui
+                    perkembangan suatu usaha.
+                </p>
+
+                <h3>
+                    B. Evolusi Pengolahan Data
+                </h3>
+                <p id="paragraf">
+                    Diperlukan evolusi dalam pengolahan data agar tidak terjadi kecurangan dalam hal manipulasi data.
+                    Berikut adalah Tahap dalam Evolusi Pengolahan Data sesuai dengan Kurva S.
+                </p>
+
+                <img src="images/pertemuan9.1.png" alt="" id="gambar">
+
+                <ol id="list" class="bullet">
+                    <li>
+                        TAHAP 1 merupakan tujuan utama tugas manusia digantikan oleh komputer adalah penghematan biaya
+                        dari berbagai sektor.
+                    </li>
+                    <li>
+                        TAHAP 2 yaitu perluasan aplikasi bertujuan mengalihkan SDM ke service, quality control,
+                        operasional, analisa pengembangan system, dll (pekerjaan yang tidak bisa digantikan dengan
+                        komputer).
+                    </li>
+                    <li>
+                        TAHAP 3 merupakan pengendalian dalam pembelian dan penjualan.
+                    </li>
+                    <li>
+                        TAHAP 4 yaitu menganalisa data-data yang sudah di input, untuk memprediksi penjualan kedepannya.
+                    </li>
+                </ol>
+
+                <p id="paragraf">
+                    Dampak yang terjadi adanya evolusi pengolahan data adalah bisa digantikannya peranan manusia, dimana
+                    semua proses input di lakukan oleh media komputer. Contoh profesi yang tergantikan oleh teknologi :
+                </p>
+
+                <ol id="list" type="1">
+                    <li>
+                        Agen Penjualan, pada dasarnya agen penjualan sangatlah penting untuk mempromosikan suatu barang
+                        atau jasa, tetapi dalam era sekarang agen penjualan tergantikan dengan adanya e-commerce.
+                    </li>
+                    <li>
+                        Kasir, di negara-negara maju kasir mulai tergantikan dengan teknologi, pelanggan dapat langsung
+                        menscan barcode yang tertera dalam produk yang terhubung dengan alat pembayaran digital.
+                    </li>
+                    <li>
+                        Teller, peranan teller sedikit tergantikan dengan mesin ATM (Anjungan Tunai Mandiri) dalam
+                        melakukan beberapa jenis transaksi, seperti transfer, setor tunai, melakukan validasi, dll.
+                    </li>
+                    <li>
+                        Operator Telepon, pekerjaan operator telepon sedikit digantikan dengan mesin penjawab otamatis
+                        dalam menjawab beberapa pertanyaan dengan memberikan panduan tentang hal-hal yang sering
+                        ditanyakan pelanggan atau customer.
+                    </li>
+                    <li>
+                        Tukang pos, surat berbentuk fisik mulai digantikan dengan e-mail (electronic mail).
+                    </li>
+                    <li>
+                        Administrasi, profesi di bidang administrasi paling banyak perubahan yang signifikan dengan
+                        adanya perkembangan teknologi, dari mulai pendaftaran, proses validasi, pencatatan, pembukuan,
+                        pelaporan, penyimpanan dan segala bentuk informasi dapat diproses komputer.
+                    </li>
+                </ol>
+
+                <p id="paragraf">
+                    Profesi baru dalam dunia digital dan evolusi pengelolahan data yaitu programmer, data analyst,
+                    database administrator, dll.
+                </p>
+
+                <h3>
+                    C. Dasar-dasar Database
+                </h3>
+                <p id="paragraf">
+                    Basis Data atau Database merupakan suatu sistem untuk menyimpan data dalam kapasitas besar dengan
+                    efisien dan tidak akan terjadi redudansi data atau pengulangan data sehingga data menjadi lebih
+                    akurat. Database diperkenalkan dengan menggunakan spreadsheet sebagai titik awal.
+                </p>
+
+                <ol id="list" type="a">
+                    <li>
+                        Data dapat mengambil banyak bentuk, termasuk angka, teks, gambar, hyperlink, dan suara. Data
+                        dapat tentang subjek apa saja, atau sekitar lebih dari satu subjek.
+                    </li>
+                    <li>
+                        Spreadsheet digunakan sebagai titik awal untuk menggambarkan basis data.
+                        Berasumsi bahwa terbiasa dengan spreadsheet, beberapa contoh umum adalah Microsoft Excel,
+                        LibreOffice Calc, dan Google Sheets.
+
+                    </li>
+                </ol>
+
+                <p id="paragraf">
+                    Spreadsheet dan basis data keduanya digunakan untuk menyimpan dan mengelola data. Perbedaan utama
+                    antara spreadsheet dan database adalah bagaimana mereka menyimpan, memanipulasi dan jumlah data yang
+                    terlibat. Proses pengolahan data dibagi menjadi beberapa tahapan:
+                </p>
+
+                <img src="images/pertemuan9.2.png" alt="" id="gambar">
+
+                <ol id="list" type="a">
+                    <li>
+                        Origination: proses pengumpulan data
+                    </li>
+                    <li>
+                        Input: memasukan data ke sistem komputer melalui media input (perangkat keras).
+                    </li>
+                    <li>
+                        Processing: proses seperti klasifikasi data pengurutan data, pengendalian atau mencari data di
+                        lakukan pada proses ini.
+                    </li>
+                    <li>
+                        Output: hasil daripada proses mengolah suatu data yang berisikan informasi sesuai dengan data
+                        yang sudah di inputkan.
+                    </li>
+                    <li>
+                        Distribution: proses memberikan hasil output kepada yang membutuhkan suatu informasi.
+                    </li>
+                    <li>
+                        Storage: hasil akan disimpan kedalam media penyimpanan atau storage device untuk memudahkan
+                        proses pencarian apabila di kemudian hari akan digunakan kembali.
+                    </li>
+                </ol>
+
+                <p id="paragraf">
+                    Pesatnya perkembangan teknologi informasi dan komunikasi membawa dampak perubahan pada metode
+                    pemrosesan data. Contoh-contoh metode pemrosesan data antara lain:
+                </p>
+
+                <ol id="list" type="a">
+                    <li>
+                        Pemrosesan Data dengan Metode Manual, Pada prosesnya masih menggunakan tangan dan beberapa alat
+                        bantu untuk mengolah data.
+                    </li>
+                    <li>
+                        Pemrosesan Data dengan Metode Electromechannical, data-data diproses menggunakan kemampuan
+                        manusia dan digabung dengan kemampuan mesin.
+                    </li>
+                    <li>
+                        Pemrosesan Data dengan Metode Punched Card Equipment: data-data diproses dengan menggunakan
+                        semua peralatan yang disebut sistem warkat unit.
+                    </li>
+                    <li>
+                        Pemrosesan Data dengan Metode Electronic Komputer: Keakuratan informasi dari hasi proses data
+                        dengan metode ini sangat tinggi serta hanya memerlukan waktu yang begitu singkat karena pada
+                        prosesnya sudah menggunakan teknologi komputer.
+                    </li>
+                    <li>
+                        Pemrosesan Data dengan Metode Network Office: Pada prosesnya, jaringan komputer perkantoran
+                        digunakan untuk pengolahan data-data.
+                    </li>
+                </ol>
+
+                <h3>
+                    D. Sistem Manajemen Basisdata
+                </h3>
+                <p id="paragraf">
+                    Merupakan software khusus yang berguna untuk mengolah data yang di inginkan di dalam basis data atau
+                    database. Sistem manajemen BasiData biasa disebut senagai Database Management System (DBMS). Sebuah
+                    sistem yang efektif untuk memanajemen dan mengorganisir sumber daya data. Itulah pengertian DBMS
+                    oleh Gordon C. Everest.
+                </p>
+                <p id="paragraf">
+                    Berikut ini merupakan beberapa tujuan dari pemanfaatan DBMS pada jaringan komputer perusahaan
+                    berdasakan fungsinya sesuai dengan pengertian DBMS:
+                </p>
+
+                <ol id="list" type="1">
+                    <li>
+                        Memelihara serta mengelola data dengan konsisten.
+                    </li>
+                    <li>
+                        Untuk mengganti tempat penyimpanan fisik seperti pembukuan di media buku besar menjadi ke dalam
+                        emdia elektronik.
+                    </li>
+                    <li>
+                        Untuk memperoleh data yang sama serta memperoleh lebih banyak informasi.
+                    </li>
+                    <li>
+                        Agar basis data dapat digunakan secara bersamaan oleh beberapa pengguna.
+                    </li>
+                    <li>
+                        Cepatnya proses pengolahan data.
+                    </li>
+                    <li>
+                        Tidak perlu menggunakan space yang besar untuk menyimpan data.
+                    </li>
+                    <li>
+                        Keamanan data sangat terjaga.
+                    </li>
+                    <li>
+                        Meminimalisir terjadinya perubahan data dan mengawasi adanya pembaharuan data.
+                    </li>
+                    <li>
+                        Menghindarai serta mencegah terjadinya inkonsisten dan duplikasi data.
+                    </li>
+                    <li>
+                        Bertanggung jawab untuk mengolah data yang besar.
+                    </li>
+                    <li>
+                        Mendukung bahasa quary.
+                    </li>
+                    <li>
+                        Pengawasan backup database dan pemulihan dari kesalahan.
+                    </li>
+                </ol>
+
+                <p id="paragraf">
+                    Software DBMS yang sering digunakan untuk mengelola database perusahaan jenis-jenisnya antara lain:
+                </p>
+
+                <ol id="list" type="a">
+                    <li>MySQL</li>
+                    <li>Oracle </li>
+                    <li>Microsoft SQL Server</li>
+                    <li>Firebird</li>
+                </ol>
+
+                <p id="paragraf">
+                    Pada umumnya sistem manajemen pengelolaan data memiliki beberapa fungsional yang menjadi
+                    komponennya, yaitu :
+                </p>
+
+                <ol id="list" type="1">
+                    <li>
+                        File Manager Dalam komponen ini, digunakan untuk representasi suatu informasi yang tersimpan di
+                        dalam media penyimpanan elektronik.
+                    </li>
+                    <li>
+                        Database Manager Di dalam komponen ini, menyediakan sarana untuk antarmuka data low level yanga
+                        da pada program aplikasi database.
+                    </li>
+                    <li>
+                        Query Processor Digunakan untuk menerjemahkan query yang di input agar dapat di mengerti oleh
+                        database manager.
+                    </li>
+                    <li>
+                        DML Precompiler Digunakan untuk melakukan konversi perintah DML biasanya ditambahkan ke dalam
+                        program aplikasi dalam bahasa utama prosedur normal.
+                    </li>
+                    <li>
+                        DDL Compiler Digunakan untuk mengkonversikan perintah DDL di dalam tabel yang berisikan data
+                        utama.
+                    </li>
+                </ol>
+
+                <p>
+                    Kekurangan Sistem Manajemen BasisData (DBMS) antara lain:
+                </p>
+
+                <ol id="list" type="1">
+                    <li>
+                        Ukurannya cukup besar karena DBMS sangat kompleks.
+                    </li>
+                    <li>
+                        Pada penggunaannya dinilai cukup kompleks.
+                    </li>
+                    <li>
+                        Biaya bergantung pada fungsi yang disediakan serta lingkungan tempat penggunaannya.
+                    </li>
+                    <li>
+                        Hardwarenya memiliki biaya tambahan.
+                    </li>
+                    <li>
+                        Bagi pengguna DBMS yang baru akan dikenakan biaya konversi.
+                    </li>
+                    <li>
+                        Performa kinerja akan menurun seiring berjalannya waktu.
+                    </li>
+                    <li>
+                        Kemungkinan untuk mengalami kegagalan yang besar akan terjadi karena penurunan performa seiring
+                        berjalannya waktu.
+                    </li>
+                </ol>
+
+                <h3>
+                    E. Data Menguntungkan Bisnis
+                </h3>
+                <p id="paragraf">
+                    Mengumpulkan dan menganalisis data sangat penting untuk bisnis kecil karena itu dapat meningkatkan
+                    efisiensi dan profit suatu usaha. Manfaat yang bisa didapat dari penggunaan basis data dalam sebuah
+                    bisnis:
+                </p>
+
+                <ol id="list" type="1">
+                    <li>
+                        Memberikan pemahaman yang solid tentang pelanggan. Data membantu bisnis memahami pelanggan lebih
+                        baik dan mengidentifikasi pasar ini lebih akurat, dengan menyimpan, menyortir, dan memfilter
+                        data tentang pelanggan.
+                    </li>
+                    <li>
+                        Mendapatkan pemahaman yang lebih dalam tentang penjualan dengan mengumpulkan dan menempatkan
+                        sebanyak mungkin informasi tentang produk dan pelanggan untuk menjadi basis data, pengusaha
+                        dapat melihat produk mana yang diminati, dan pelanggan
+                    </li>
+                    <li>
+                        Kontrol stok yang efisien dengan hanya melihat sekilas ke basis data.
+                    </li>
+                    <li>
+                        Menanggapi perubahan database yang terorganisasi dengan baik dapat membantu bisnis merespon
+                        perubahan dan membuat keputusan.
+                    </li>
+                    <li>
+                        Analisis data kemampuan query dan pelaporan dari database menjadikannya sangat berharga.
+                    </li>
+                    <li>
+                        Meningkatkan keamanan data kontrol dan otorisasi keamanan dapat diimplementasikan dalam database
+                        dengan memindahkan data sensitif ke dalam tabel terpisah dengan kontrol otorisasi sendiri.
+                    </li>
+                </ol>
+
+                <h3>
+                    F. Suatu Usaha Tidak Menggunakan Database
+                </h3>
+                <p id="paragraf">
+                    Alasan mengapa usaha kecil mengabaikan dalam menggunakan data mereka untuk penggunaan yang
+                    bermanfaat seperti yang dibahas dalam bagian sebelumnya. Tujuannya untuk mendorong pengusaha menjauh
+                    dari keraguan yang mungkin dimiliki, yaitu:
+                </p>
+
+                <ol id="list" type="1">
+                    <li>
+                        Terlalu mahal
+                    </li>
                     <p>
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut obcaecati veniam libero tempora
-                        vitae ratione quam dolorem ad laborum blanditiis earum rerum nemo dolor sequi architecto,
-                        numquam nihil quas suscipit omnis. Hic est non dolor. Similique mollitia dicta doloribus amet
-                        sit sapiente modi voluptate alias explicabo accusantium? Esse molestias repudiandae animi
-                        dignissimos mollitia cum minima consequatur? Suscipit repellat cum delectus in nobis natus
-                        accusantium libero reiciendis voluptate nam. Cupiditate quia facere libero error deleniti in
-                        excepturi architecto nulla minus veniam. Velit numquam repellendus earum reprehenderit atque
-                        fuga eum enim perferendis dicta. Ratione facere, aperiam illum dolore eligendi ipsa aliquid
-                        natus aut ea? Illum repellendus non animi pariatur nisi doloribus perferendis at? Ex incidunt
-                        iste repellendus tempora, cupiditate ad velit saepe placeat dolore iure consequatur magnam
-                        aliquam voluptas soluta debitis minus. Doloribus hic voluptate sint adipisci, error neque iste
-                        iusto at mollitia rerum, eaque recusandae aliquid atque, nulla molestiae saepe dolorem alias
-                        quaerat consectetur ipsam. Voluptatem incidunt sit, fugit minima labore dolores distinctio ipsam
-                        ratione provident culpa molestiae blanditiis, eum dolorem tenetur, pariatur dolor asperiores
-                        quas illum debitis. Commodi, error? Fugit, quidem cupiditate! Iste sint perspiciatis ipsum vel
-                        deserunt in voluptatibus at? Quibusdam impedit architecto tempora nobis. Laborum neque tenetur
-                        eum provident modi debitis totam veniam sit iste eaque earum necessitatibus eos magnam
-                        voluptatibus commodi similique quas facere aliquam reiciendis, dolorum pariatur dignissimos,
-                        dolore vero! Quidem fugiat dolor architecto delectus optio. Optio enim dolore laudantium
-                        necessitatibus ad vero quasi facilis odit doloribus, commodi inventore dicta tenetur dolor magni
-                        quisquam. Dolorem magnam rem perferendis illo neque unde vel quasi minus mollitia sapiente a
-                        tempora ullam molestiae, velit iste veniam ducimus ex in repudiandae eligendi ipsam nemo
-                        officia! Doloremque, rem quaerat qui iusto perspiciatis laborum et illum tempore quis nemo
-                        necessitatibus provident accusantium est dolorum amet suscipit ut voluptas eos omnis minus nulla
-                        architecto voluptates quia voluptate. Itaque voluptas cupiditate iste, ab perferendis repellat
-                        recusandae at praesentium earum obcaecati vel illo temporibus architecto neque quis laboriosam
-                        quidem libero sit pariatur, possimus officiis voluptatibus cumque odio. Temporibus similique
-                        veniam quas distinctio corrupti obcaecati rem quod? Nisi facere hic beatae odit voluptate. Hic,
-                        iste facilis! Vero commodi dignissimos sapiente eligendi neque reiciendis quas, incidunt magnam
-                        odit dolor voluptatum quo beatae cupiditate quidem eius architecto quaerat vitae ab cum, libero
-                        fugiat. Autem sapiente praesentium natus harum voluptate aliquid labore quos placeat reiciendis
-                        dolorem blanditiis, aperiam, sint, voluptatibus soluta! Amet voluptas aliquam maxime
-                        reprehenderit animi neque sapiente! Unde animi dolore iure nostrum nemo, minima at veniam
-                        facilis doloremque consectetur quasi enim tempore similique sit natus aperiam. Aliquid quas
-                        laudantium voluptate, vel explicabo odit. At dolorem nobis mollitia expedita, a repellat
-                        nesciunt doloribus deserunt pariatur eius sed amet asperiores dolores ipsam vel. Quam voluptates
-                        eum iste voluptas vero dicta maxime tenetur dolorum excepturi mollitia, quo aperiam quis facere
-                        quae expedita minima iure tempora architecto consectetur laudantium reprehenderit vitae. Atque
-                        accusamus autem aspernatur nesciunt facere facilis exercitationem ullam eligendi sequi ipsum.
-                        Modi quo, pariatur fugiat voluptate iste obcaecati dolorem dicta hic. Aliquid expedita nisi
-                        numquam tenetur aut laborum minima accusantium, eum vel et quam ea, mollitia, excepturi
-                        cupiditate? Nihil fugit, nesciunt maiores consequatur aperiam aut autem sint molestias minima
-                        delectus rem hic neque dolorum ea placeat similique excepturi distinctio consectetur laudantium
-                        mollitia eaque accusantium id recusandae. Quasi dolorum blanditiis eos temporibus debitis magni
-                        inventore, explicabo sint omnis labore amet numquam incidunt. Assumenda ipsa enim, amet iure ex
-                        doloribus inventore sit asperiores perspiciatis, qui, repellendus necessitatibus! Suscipit quae
-                        fuga quasi, temporibus cumque laborum illo iusto sunt beatae commodi veniam voluptatum eveniet
-                        quis repellendus! Minima quis mollitia perspiciatis voluptatibus consequuntur, doloremque
-                        delectus officia sit vero incidunt sint quibusdam cupiditate dolores, modi id similique
-                        repellendus eligendi porro voluptates quas at quod culpa? Explicabo, incidunt facilis architecto
-                        doloremque maxime, placeat itaque repellendus temporibus earum, nobis iure unde labore saepe hic
-                        fugit molestiae reprehenderit libero dolor quasi qui ad eius recusandae quo distinctio. Optio
-                        deleniti fugiat earum minus porro quia, veritatis dolorum quam delectus, beatae a inventore
-                        blanditiis aut doloremque laudantium vel eveniet quibusdam. Sequi impedit ipsa quas voluptatem
-                        cupiditate quod, odio quis eveniet eum consectetur aliquid minima optio nobis cum vero qui
-                        numquam deleniti iusto! Quibusdam harum in dignissimos eum officia dolorem, nostrum voluptatum
-                        quod ex molestias blanditiis. Neque vitae quia id rem perferendis. Doloribus assumenda dolores
-                        laborum repellendus illum ipsa labore! Dicta nisi vel odit nemo. Quasi facilis, eos id
-                        perferendis assumenda excepturi pariatur nulla eius vitae consectetur laborum repudiandae unde
-                        nesciunt quia voluptas incidunt, quisquam dolor voluptates? Commodi, expedita inventore. Non qui
-                        quaerat excepturi recusandae ratione facere natus officia veniam, molestiae quas tenetur minima
-                        iusto reprehenderit? Sint reprehenderit doloribus, placeat, aspernatur voluptatum natus eveniet
-                        ullam tempore optio eaque quas cumque ad. Impedit tenetur quos aut nam laboriosam. Vero at
-                        delectus nostrum reiciendis? Porro adipisci maiores ut. Fugit velit temporibus facere illum
-                        repellendus deserunt porro earum minus maxime, maiores, sed incidunt. Quae, quia corrupti
-                        mollitia et modi necessitatibus eveniet quibusdam vel debitis minima eos doloremque, ea,
-                        architecto quasi itaque veritatis. Incidunt consequatur at quibusdam in facere! Delectus minus,
-                        deserunt impedit laborum officiis, tempore suscipit esse quidem quis quia est quaerat ipsa,
-                        repudiandae repellendus. Recusandae, suscipit beatae quis ipsam iusto doloremque, quod, fugiat
-                        accusamus odio totam illum necessitatibus quae ad fugit quisquam harum modi quidem consequuntur
-                        placeat deserunt rem impedit nisi soluta laborum. Beatae animi, consequatur facere adipisci nemo
-                        reiciendis fugit quos praesentium nisi sit, quod, commodi perferendis quisquam cupiditate ipsa
-                        architecto ad deserunt temporibus accusantium non exercitationem blanditiis alias officia quis.
-                        Aut fuga dolore, ab expedita perferendis dignissimos quidem, omnis ipsa earum, cum accusantium
-                        molestiae laborum itaque deleniti tempore porro eveniet temporibus unde culpa? Dolorem excepturi
-                        magnam quibusdam cumque nihil a eligendi minus tempore modi, architecto adipisci, totam mollitia
-                        animi atque illum doloribus consequuntur alias necessitatibus neque ex molestiae, placeat
-                        praesentium deserunt. Doloremque laudantium, aliquid sapiente aspernatur illo error magnam
-                        ducimus deleniti accusamus delectus architecto reiciendis, accusantium dolore eos eius aut
-                        impedit, necessitatibus eligendi. Earum, nostrum. Velit magnam officiis consequatur veniam, quis
-                        quaerat voluptatum distinctio saepe sint quas doloribus ipsa sapiente tempora. Eaque dolore
-                        autem aliquam corporis quasi ipsam, quaerat sed?
-
+                        Banyak usaha kecil memiliki anggaran kecil dan menganggap database terlalu mahal. Mereka percaya
+                        bahwa mereka harus membayar ahli untuk membuat database.
                     </p>
-                    <img src="images/tiktokori.png" alt="" id="tiktok">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consequuntur ex rerum est optio dolor nisi dicta consequatur molestiae tempore similique temporibus, atque deleniti debitis deserunt. Doloremque non quos ut atque soluta esse magni deleniti sit numquam dignissimos, est porro blanditiis veniam molestias excepturi modi labore voluptas sunt quis, a maxime aliquid et officia? Accusantium laborum quo unde maiores nesciunt hic culpa temporibus odio corrupti? Alias obcaecati numquam qui corporis, modi inventore fuga omnis provident expedita quia asperiores animi rerum eligendi sit dolores consequuntur sapiente perspiciatis nostrum ipsam iure aliquam quam voluptatibus vitae esse! Quibusdam pariatur repudiandae, in ad quia quos nisi ipsa sapiente odio doloremque harum soluta dolor nesciunt aliquid voluptatum ipsum beatae consectetur a. Minima nobis voluptates commodi?</p>
-                </div>
+                    <li>
+                        Terlalu Mengganggu
+                    </li>
+                    <p>
+                        Jika sebuah perusahaan berjalan dengan lancar mungkin ada kekhawatiran bahwa implementasi sebuah
+                        database akan mengganggu status dan menyebabkan kejatuhan dalam bisnis. Mungkin khawatir bahwa
+                        suatu periode waktu akan muncul masalah saat menerima pesanan.
+                    </p>
+                    <li>
+                        Akan Terlalu Banyak Waktu
+                    </li>
+                    <p>
+                        Pengusaha dapat mengimplementasikan database dalam langkah-langkah kecil, seperti manfaat basis
+                        data dan pentingnya data untuk bisnis kecil. Keputusan bermuara pada keseimbangan antara
+                        investasi dan imbalan, dan terserah bisnis individu untuk memutuskan di mana ia berada pada
+                        spektrum.
+                    </p>
+                    <li>
+                        Terlalu Sulit untuk Belajar dan Melaksanakan
+                    </li>
+                    <p>
+                        Mungkin sulit untuk mempelajari tentang basis data ketika pengusaha belum pernah menggunakan
+                        sebelumnya. Tapi, jika sudah menggunakan pengolah kata dan spreadsheet, langkah tersebut untuk
+                        menggunakan database tidak sesulit yang dikira.
+                    </p>
+                    <li>
+                        Terlalu Rendah pada Daftar Prioritas
+                    </li>
+                    <p>
+                        Menjalankan bisnis kecil bisa sangat berat, dengan jam kerja yang panjang dan sedikit waktu
+                        untuk tetap terorganisir.
+                    </p>
+                </ol>
+
             </div>
         </div>
     </div>
+    </div>
 
+    <a href="#halaman" id="myBtn" title="Go to top">
+        <svg width="25" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+        </svg>
+
+    </a>
 
 
 
