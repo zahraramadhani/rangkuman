@@ -231,7 +231,7 @@ h3 {
     nav ul li a {
         padding: 10px;
         display: block;
-        width: 1000px;
+        width: 377px;
     }
 
     input[type="checkbox"]:not(:checked)~ul {
