@@ -32,13 +32,16 @@ body {
     text-decoration: none;
 }
 
-.halaman span,
 a:link,
 a:visited {
-    padding: 5px;
-    display: block;
+
     color: black;
     text-decoration: none;
+}
+
+.halaman span {
+    padding: 9px;
+    display: block;
     width: 120px;
 }
 
@@ -84,7 +87,7 @@ nav {
     transition: 0.5s;
 }
 
-input[type='checkbox']{
+input[type='checkbox'] {
     appearance: none;
     -webkit-appearance: none;
 }
@@ -94,7 +97,7 @@ label {
     -webkit-appearance: none;
 }
 
-ul{
+ul {
     list-style: none;
     display: flex;
 }
@@ -107,6 +110,14 @@ ul{
 .active {
     background-color: green;
     cursor: unset;
+}
+
+.activenav {
+    display: block;
+    width: 377px;
+    padding: 10px;
+    background-color: green;
+    border-radius: 10px;
 }
 
 /* AKHIR NAVBAR */
@@ -145,14 +156,14 @@ ul{
 }
 
 
-#list{
+#list {
     margin-left: 40px;
     margin-top: 10px;
     margin-bottom: 15px;
     text-align: justify;
 }
 
-#list2{
+#list2 {
     margin-left: 18px;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -172,7 +183,7 @@ h3 {
     margin-bottom: 15px;
 }
 
-#pertemuan{
+#pertemuan {
     display: block;
     height: 75px;
 }
@@ -197,20 +208,30 @@ h3 {
 
     nav {
         display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    nav ul{
-        font-size: 1.2em;
+    nav ul {
         flex-direction: column;
         background-color: white;
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     nav ul li {
-        margin-bottom: 0;
-        width: 100%;
         text-align: center;
         padding: 0.5em;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        display: block;
+        width: 1000px;
     }
 
     input[type="checkbox"]:not(:checked)~ul {
@@ -224,6 +245,7 @@ h3 {
         padding: 0.5em;
         line-height: 1.6em;
         align-self: center;
+        width: 100%;
     }
 
     #myBtn {
