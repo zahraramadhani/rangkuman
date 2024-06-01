@@ -120,6 +120,11 @@ ul {
     border-radius: 10px;
 }
 
+.halaman a .homepage:hover {
+    background-color: purple;
+    transition: background-color 0.4s;
+}
+
 /* AKHIR NAVBAR */
 
 #myBtn {
@@ -129,7 +134,7 @@ ul {
 /* Awal pengaturan untuk Text dan Gambar Isi Rangkuman */
 #gambar {
     display: block;
-    width: 50%;
+    width: 85%;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
