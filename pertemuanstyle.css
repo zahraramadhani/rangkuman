@@ -246,23 +246,23 @@ h3 {
 
     /* BURGER LIST */
 
-     input[type="checkbox"]:checked ~ .menu-burger span:nth-child(1) {
+     input[type="checkbox"]:checked ~ label .menu-burger span:nth-child(1) {
         transform: rotate(-45deg) translate(-5px, 1px);
         transition: all 0.5s;
     }
     
-    input[type="checkbox"]:checked ~ .menu-burger span:nth-child(2) {
+    input[type="checkbox"]:checked ~ label .menu-burger span:nth-child(2) {
         display: none;
         visibility: hidden;
         transition: all 0.5s;
     }
 
-    input[type="checkbox"]:checked ~ .menu-burger span:nth-child(3) {
+    input[type="checkbox"]:checked ~ label .menu-burger span:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -1px);
         transition: all 0.5s;
     }
 
-    input[type="checkbox"]:not(:checked) ~ .menu-burger span {
+    input[type="checkbox"]:not(:checked) ~ label .menu-burger span {
         transition: all 0.5s;
     }
 
