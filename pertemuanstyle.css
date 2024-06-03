@@ -27,7 +27,7 @@ body {
     transform: translateY(-50%);
     left: 30px;
     border: solid;
-    border-color: green;
+    border-color: purple;
     border-radius: 10px;
     text-decoration: none;
 }
@@ -46,7 +46,7 @@ a:visited {
 }
 
 .halaman a:hover {
-    background-color: green;
+    background-color: purple;
     transition: background-color 0.3s;
 }
 
@@ -108,7 +108,7 @@ ul {
 
 
 .active {
-    background-color: green;
+    background-color: purple;
     cursor: unset;
 }
 
@@ -116,7 +116,7 @@ ul {
     display: block;
     width: 1000px;
     padding: 10px;
-    background-color: green;
+    background-color: purple;
     border-radius: 10px;
 }
 
@@ -244,14 +244,54 @@ h3 {
         display: none;
     }
 
+    /* BURGER LIST */
+
+     input[type="checkbox"]:checked ~ .menu-burger span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 1px);
+        transition: all 0.5s;
+    }
+    
+    input[type="checkbox"]:checked ~ .menu-burger span:nth-child(2) {
+        display: none;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    input[type="checkbox"]:checked ~ .menu-burger span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -1px);
+        transition: all 0.5s;
+    }
+
+    input[type="checkbox"]:not(:checked) ~ .menu-burger span {
+        transition: all 0.5s;
+    }
+
+    /* BURGER LIST */
+
     label {
-        background-color: green;
+        background-color: purple;
         text-align: center;
         display: block;
         padding: 0.5em;
         line-height: 1.6em;
         align-self: center;
         width: 100%;
+    }
+
+    .menu-burger {
+        right: 10px;
+        top: 9px;
+        align-items: center;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-burger span {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 3px 0px;
     }
 
     #myBtn {
