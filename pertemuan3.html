@@ -7,27 +7,21 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman 3</title>
+    <title>Pertemuan 3</title>
     <link rel="stylesheet" href="pertemuanstyle.css">
 </head>
 
 <body>
     <nav>
-        <!-- Always visible items in the nav bar -->
-        <!-- <ul>
-            <li>
-                <a href="Homepage">Homepage</a>
-            </li>
-        </ul> -->
+        <input id='menu' type='checkbox' />
         <label id="halaman" for='menu' tabindex="0">
             Halaman
+            <div class="menu-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </label>
-        <input id='menu' type='checkbox' />
-        <div class="menu-burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
         <!-- The collapsable menu -->
         <ul>
             <li><a href='./'>Homepage</a></li>
