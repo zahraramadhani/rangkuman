@@ -107,12 +107,13 @@ ul {
 }
 
 
-.active {
+.active{
+    color: white;
     background-color: purple;
     cursor: unset;
 }
 
-.activenav {
+.activenav{
     display: block;
     width: 1000px;
     padding: 10px;
@@ -269,6 +270,7 @@ h3 {
     /* BURGER LIST */
 
     label {
+        color: white;
         background-color: purple;
         text-align: center;
         display: block;
