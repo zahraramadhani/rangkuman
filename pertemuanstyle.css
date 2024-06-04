@@ -228,6 +228,9 @@ h3 {
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: height .3s;
+        overflow: hidden;
+        height: calc(100vh - 100px);
     }
 
     nav ul li {
@@ -242,7 +245,7 @@ h3 {
     }
 
     input[type="checkbox"]:not(:checked)~ul {
-        display: none;
+        height: 0;
     }
 
     /* BURGER LIST */
