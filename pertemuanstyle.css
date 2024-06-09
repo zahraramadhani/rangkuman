@@ -196,7 +196,13 @@ h3 {
 
 /* Akhir pengaturan untuk Text dan Gambar Isi Rangkuman */
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:1200px){
+    .rangkuman {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width:800px) {
 
     .rangkuman {
         width: 100%;
